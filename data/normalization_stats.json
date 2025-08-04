@@ -1,0 +1,146 @@
+{
+  "receivingReceptions": {
+    "mean": 3.6763361124985594,
+    "std": 10.627910806205168
+  },
+  "receivingYards": {
+    "mean": 21.963906685530798,
+    "std": 33.21634811596561
+  },
+  "receivingTouchdowns": {
+    "mean": 0.2542359857071503,
+    "std": 0.9402482231146764
+  },
+  "receivingTargets": {
+    "mean": 5.373112536980828,
+    "std": 15.590302962400692
+  },
+  "receivingYardsAfterCatch": {
+    "mean": 19.83590117954432,
+    "std": 58.51188553634058
+  },
+  "receiving100To199YardGame": {
+    "mean": 0.07884120336573558,
+    "std": 0.42514786262053994
+  },
+  "receiving200PlusYardGame": {
+    "mean": 0.0013831790064164136,
+    "std": 0.038185928370029446
+  },
+  "passingAttempts": {
+    "mean": 5.946132862027894,
+    "std": 39.38909720918475
+  },
+  "passingCompletions": {
+    "mean": 3.8954931417374263,
+    "std": 25.935670867284447
+  },
+  "passingYards": {
+    "mean": 23.40372339556538,
+    "std": 75.56755562147117
+  },
+  "passingTouchdowns": {
+    "mean": 0.2897760018442387,
+    "std": 2.022471443507213
+  },
+  "passingInterceptions": {
+    "mean": 0.12387136435240327,
+    "std": 0.8889512539352449
+  },
+  "passing40PlusYardTD": {
+    "mean": 0.036039497444961,
+    "std": 0.31105770378132674
+  },
+  "passing50PlusYardTD": {
+    "mean": 0.021439274599454414,
+    "std": 0.20314488206626663
+  },
+  "passing300To399YardGame": {
+    "mean": 0.038037422676451375,
+    "std": 0.3233017955542759
+  },
+  "passing400PlusYardGame": {
+    "mean": 0.004994813078725939,
+    "std": 0.08393392703443597
+  },
+  "passing2PtConversions": {
+    "mean": 0.013831790064164138,
+    "std": 0.14967119314060526
+  },
+  "rushingAttempts": {
+    "mean": 5.383601644446152,
+    "std": 21.524206893848618
+  },
+  "rushingYards": {
+    "mean": 12.75551387575287,
+    "std": 27.170268322839835
+  },
+  "rushing40PlusYardTD": {
+    "mean": 0.010681215660660083,
+    "std": 0.11939913059924623
+  },
+  "rushing50PlusYardTD": {
+    "mean": 0.007300111422753295,
+    "std": 0.09812915669068759
+  },
+  "rushing100To199YardGame": {
+    "mean": 0.04464594459599647,
+    "std": 0.323644986791979
+  },
+  "rushing200PlusYardGame": {
+    "mean": 0.0009989626157451876,
+    "std": 0.03505055957366528
+  },
+  "rushingTouchdowns": {
+    "mean": 0.19399085564990204,
+    "std": 0.9062642250096271
+  },
+  "passingTimesSacked": {
+    "mean": 0.3942060168286779,
+    "std": 2.701180230130262
+  },
+  "fumbles": {
+    "mean": 0.17070734237522572,
+    "std": 0.7606046626016298
+  },
+  "lostFumbles": {
+    "mean": 0.08122334498789718,
+    "std": 0.39546601629132094
+  },
+  "turnovers": {
+    "mean": 0.20509470934030047,
+    "std": 1.1496293984775725
+  },
+  "madeFieldGoalsFrom50Plus": {
+    "mean": 0.04518384754293618,
+    "std": 0.4206342981259533
+  },
+  "attemptedFieldGoalsFrom50Plus": {
+    "mean": 0.06570100280477965,
+    "std": 0.5693863789926258
+  },
+  "madeFieldGoalsFromUnder40": {
+    "mean": 0.15092019825565758,
+    "std": 1.1672742690946258
+  },
+  "attemptedFieldGoalsFromUnder40": {
+    "mean": 0.15783609328773965,
+    "std": 1.2158437107719977
+  },
+  "madeFieldGoals": {
+    "mean": 0.2658008990663542,
+    "std": 2.0063794876056606
+  },
+  "attemptedFieldGoals": {
+    "mean": 0.31029315710608213,
+    "std": 2.3216367943815364
+  },
+  "madeExtraPoints": {
+    "mean": 0.3615476236216237,
+    "std": 2.778053965264994
+  },
+  "attemptedExtraPoints": {
+    "mean": 0.3797594805394398,
+    "std": 2.91101444887931
+  }
+}
