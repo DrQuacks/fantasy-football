@@ -20,6 +20,23 @@ def apply_normalization(df: pd.DataFrame, stats: dict) -> pd.DataFrame:
             norm_df[key] = (norm_df[key] - s["mean"]) / s["std"]
     return norm_df
 
+def reverse_normalization(data, feature_names, stats):
+    """
+    Reverse z-score normalization using stats dictionary.
+    - data: np.ndarray or torch.Tensor of shape (N, D)
+    - feature_names: list of D feature names
+    - stats: dict with mean/std for each feature
+    Returns: denormalized numpy array
+    """
+    import numpy as np
+    data = data.detach().cpu().numpy() if hasattr(data, 'detach') else data
+    denorm = []
+    for i, key in enumerate(feature_names):
+        mean = stats[key]['mean']
+        std = stats[key]['std']
+        denorm_col = data[:, i] * std + mean
+        denorm.append(denorm_col)
+    return np.stack(denorm, axis=1)
 
 def save_stats(stats: dict, path: str):
     with open(path, "w") as f:

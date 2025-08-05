@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, random_split
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
-from model import TransformerDecoderModel
+from model import TransformerDecoderOnly
 from dataset import FantasyFootballDataset
 from normalize_utils import load_stats, apply_normalization
 from soft_constraints import soft_constraint_loss
@@ -12,11 +12,14 @@ from soft_constraints import soft_constraint_loss
 import pandas as pd
 
 # --- Configuration ---
-EPOCHS = 30
+EPOCHS = 50
 BATCH_SIZE = 32
 LEARNING_RATE = 1e-4
-CONTEXT_LENGTH = 5
-FORECAST_LENGTH = 1
+CONTEXT_LENGTH = 12
+FORECAST_LENGTH = 4
+MODE = "next"
+VAL_SPLIT = 0.2
+
 NORMALIZED_PARQUET = "data/fantasy_weekly_stats_normalized.parquet"
 STATS_PATH = "data/normalization_stats.json"
 
@@ -39,67 +42,95 @@ device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # --- Load dataset ---
-dataset = FantasyFootballDataset(
+full_dataset = FantasyFootballDataset(
     parquet_path=NORMALIZED_PARQUET,
     input_features=NON_DERIVED_FIELDS,
     target_features=NON_DERIVED_FIELDS,
     context_length=CONTEXT_LENGTH,
     forecast_length=FORECAST_LENGTH,
-    mode="next"
+    mode=MODE
 )
 
-loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+val_size = int(len(full_dataset) * VAL_SPLIT)
+train_size = len(full_dataset) - val_size
+train_dataset, val_dataset = random_split(full_dataset, [train_size, val_size])
+train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE)
 
 # --- Initialize model ---
-model = TransformerDecoderModel(
+model = TransformerDecoderOnly(
     input_dim=len(NON_DERIVED_FIELDS),
     model_dim=128,
     num_heads=4,
     num_layers=4,
     dropout=0.1,
-    output_dim=len(NON_DERIVED_FIELDS)
+    output_dim=len(NON_DERIVED_FIELDS),
+    context_length=CONTEXT_LENGTH,
+    forecast_length=FORECAST_LENGTH
 ).to(device)
 
 optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
-loss_fn = nn.MSELoss()
+loss_fn = nn.MSELoss(reduction='none')
 
-# --- Training loop ---
-epoch_losses = []
+train_losses, val_losses = [], []
 
 for epoch in range(EPOCHS):
     model.train()
-    total_loss = 0.0
-
-    for inputs, targets in tqdm(loader, desc=f"Epoch {epoch + 1}/{EPOCHS}"):
-        inputs, targets = inputs.to(device), targets.to(device)
+    total_train_loss = 0.0
+    for inputs, targets, masks in tqdm(train_loader, desc=f"Epoch {epoch + 1}/{EPOCHS} [Train]"):
+        inputs, targets, masks = inputs.to(device), targets.to(device), masks.to(device)
 
         optimizer.zero_grad()
         outputs = model(inputs)
 
-        task_loss = loss_fn(outputs, targets)
         preds_dict = {key: outputs[..., idx] for idx, key in enumerate(NON_DERIVED_FIELDS)}
         constraint_penalty = soft_constraint_loss(preds_dict)
-        loss = task_loss + constraint_penalty
 
+        mse = loss_fn(outputs, targets).mean(dim=-1)
+        masked_mse = (mse * masks).sum() / masks.sum().clamp(min=1.0)
+
+        loss = masked_mse + constraint_penalty
         loss.backward()
         optimizer.step()
 
-        total_loss += loss.item()
+        total_train_loss += loss.item()
 
-    avg_loss = total_loss / len(loader)
-    epoch_losses.append(avg_loss)
-    print(f"Epoch {epoch + 1}: loss = {avg_loss:.4f}")
+    avg_train_loss = total_train_loss / len(train_loader)
+    train_losses.append(avg_train_loss)
+
+    model.eval()
+    total_val_loss = 0.0
+    with torch.no_grad():
+        for inputs, targets, masks in tqdm(val_loader, desc=f"Epoch {epoch + 1}/{EPOCHS} [Val]"):
+            inputs, targets, masks = inputs.to(device), targets.to(device), masks.to(device)
+
+            outputs = model(inputs)
+            preds_dict = {key: outputs[..., idx] for idx, key in enumerate(NON_DERIVED_FIELDS)}
+            constraint_penalty = soft_constraint_loss(preds_dict)
+
+            mse = loss_fn(outputs, targets).mean(dim=-1)
+            masked_mse = (mse * masks).sum() / masks.sum().clamp(min=1.0)
+
+            loss = masked_mse + constraint_penalty
+            total_val_loss += loss.item()
+
+    avg_val_loss = total_val_loss / len(val_loader)
+    val_losses.append(avg_val_loss)
+
+    print(f"✅ Epoch {epoch + 1} | Train Loss: {avg_train_loss:.4f} | Val Loss: {avg_val_loss:.4f}")
 
 # --- Save model ---
 torch.save(model.state_dict(), "decoder_model.pth")
 print("✅ Model saved to decoder_model.pth")
 
-# --- Plot training loss ---
+# --- Plot losses ---
 plt.figure(figsize=(10, 6))
-plt.plot(range(1, EPOCHS + 1), epoch_losses, marker='o')
+plt.plot(range(1, EPOCHS + 1), train_losses, label="Train", marker="o")
+plt.plot(range(1, EPOCHS + 1), val_losses, label="Validation", marker="x")
 plt.xlabel("Epoch")
 plt.ylabel("Loss")
-plt.title("Training Loss Over Epochs")
+plt.title("Training and Validation Loss")
+plt.legend()
 plt.grid(True)
-plt.savefig("training_loss_curve.png")
+plt.savefig("training_val_loss_curve.png")
 plt.show()
