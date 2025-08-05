@@ -5,6 +5,8 @@ import pandas as pd
 from model import TransformerDecoderOnly
 from normalize_utils import load_stats, reverse_normalization
 from dataset import FantasyFootballDataset
+import plotly.graph_objects as go
+
 
 # --- Config ---
 MODEL_PATH = "decoder_model.pth"
@@ -70,16 +72,74 @@ pred_df["week"] = list(range(CONTEXT_LENGTH + 1, CONTEXT_LENGTH + FORECAST_LENGT
 actual_df = pd.DataFrame(reverse_normalization(actual.to_numpy(), FEATURES, stats), columns=FEATURES)
 actual_df["week"] = pred_df["week"]
 
-# --- Plot ---
-plt.figure(figsize=(10, 6))
-for feat in FEATURES:
-    plt.plot(pred_df["week"], pred_df[feat], label=f"Predicted {feat}", marker="o")
-    plt.plot(actual_df["week"], actual_df[feat], label=f"Actual {feat}", marker="x", linestyle="--")
+# # --- Plot ---
+# plt.figure(figsize=(10, 6))
+# for feat in FEATURES:
+#     plt.plot(pred_df["week"], pred_df[feat], label=f"Predicted {feat}", marker="o")
+#     plt.plot(actual_df["week"], actual_df[feat], label=f"Actual {feat}", marker="x", linestyle="--")
 
-plt.title(f"Predicted vs Actual Stats for {PLAYER_NAME} Weeks {CONTEXT_LENGTH+1}-{CONTEXT_LENGTH+FORECAST_LENGTH}")
-plt.xlabel("Week")
-plt.ylabel("Stat Value")
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-plt.show()
+# plt.title(f"Predicted vs Actual Stats for {PLAYER_NAME} Weeks {CONTEXT_LENGTH+1}-{CONTEXT_LENGTH+FORECAST_LENGTH}")
+# plt.xlabel("Week")
+# plt.ylabel("Stat Value")
+# plt.grid(True)
+# plt.legend()
+# plt.tight_layout()
+# plt.show()
+
+
+# Create a figure with dropdown
+fig = go.Figure()
+
+for feat in FEATURES:
+    # Predicted trace
+    fig.add_trace(go.Scatter(
+        x=pred_df["week"], y=pred_df[feat],
+        mode="lines+markers",
+        name=f"Predicted {feat}",
+        visible=(feat == FEATURES[0])  # Only show first initially
+    ))
+
+    # Actual trace
+    fig.add_trace(go.Scatter(
+        x=actual_df["week"], y=actual_df[feat],
+        mode="lines+markers",
+        line=dict(dash="dash"),
+        name=f"Actual {feat}",
+        visible=(feat == FEATURES[0])
+    ))
+
+# Create dropdown options
+dropdown_buttons = []
+for i, feat in enumerate(FEATURES):
+    visibility = [False] * len(FEATURES) * 2
+    visibility[i * 2] = True      # Predicted
+    visibility[i * 2 + 1] = True  # Actual
+    dropdown_buttons.append(dict(
+        label=feat,
+        method="update",
+        args=[{"visible": visibility},
+              {"title": f"{feat}: Predicted vs Actual"}]
+    ))
+
+fig.update_layout(
+    updatemenus=[dict(
+        active=0,
+        buttons=dropdown_buttons,
+        x=1.2,
+        y=1.0
+    )],
+    title=f"{FEATURES[0]}: Predicted vs Actual for {PLAYER_NAME}",
+    xaxis_title="Week",
+    yaxis_title="Value",
+    height=550,
+    legend=dict(
+        orientation="h",
+        yanchor="bottom",
+        y=-0.3,
+        xanchor="center",
+        x=0.5
+    )
+)
+
+fig.show()
+
