@@ -84,9 +84,13 @@ for doc in tqdm(cursor, desc="Processing player stats"):
             "winLoss": 1 if stats.get("breakdown", {}).get("teamWin") else 0,
             # Optional enriched fields from schedule augmentation
             "position": position,
+            "player_team": stats.get("player_team"),
+            "bye_week": bool(stats.get("bye_week", False)),
             "opponent": stats.get("team"),
             "date": stats.get("date"),
             "time": stats.get("time"),
+            # Grouping key to identify teammates without knowing explicit team abbrev
+            "team_week_key": f"{year}-W{int(week)}-opp:{stats.get('team')}",
         }
 
         breakdown = stats.get("breakdown", {})
