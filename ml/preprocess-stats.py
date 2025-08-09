@@ -63,9 +63,17 @@ for doc in tqdm(cursor, desc="Processing player stats"):
     name = doc.get("name")
     year = doc.get("year")
     playerId = doc.get("playerId")
+    position = doc.get("position")
     weekly_stats = doc.get("weekly_stats", {})
 
     for week, stats in weekly_stats.items():
+        # Skip season aggregate rows stored under week 0
+        try:
+            if int(week) == 0:
+                continue
+        except Exception:
+            # If week is non-numeric, skip defensively
+            continue
         row = {
             "name": name,
             "year": year,
@@ -74,6 +82,11 @@ for doc in tqdm(cursor, desc="Processing player stats"):
             "points": stats.get("points", 0),
             "projected_points": stats.get("projected_points", 0),
             "winLoss": 1 if stats.get("breakdown", {}).get("teamWin") else 0,
+            # Optional enriched fields from schedule augmentation
+            "position": position,
+            "opponent": stats.get("team"),
+            "date": stats.get("date"),
+            "time": stats.get("time"),
         }
 
         breakdown = stats.get("breakdown", {})

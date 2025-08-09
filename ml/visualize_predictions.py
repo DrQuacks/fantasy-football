@@ -4,7 +4,6 @@ import pandas as pd
 
 from model import TransformerDecoderOnly
 from normalize_utils import load_stats, reverse_normalization
-from dataset import FantasyFootballDataset
 import plotly.graph_objects as go
 
 
@@ -30,25 +29,22 @@ FEATURES = [
     'madeFieldGoals', 'attemptedFieldGoals', 'madeExtraPoints', 'attemptedExtraPoints'
 ]
 
-# --- Load dataset and model ---
-dataset = FantasyFootballDataset(
-    parquet_path=PARQUET_PATH,
-    input_features=FEATURES,
-    target_features=FEATURES,
-    context_length=CONTEXT_LENGTH,
-    forecast_length=FORECAST_LENGTH,
-    mode="next"
-)
+# --- Build feature lists with opponent one-hot ---
+all_cols = pd.read_parquet(PARQUET_PATH).columns
+OPPONENT_ONE_HOT_COLS = [c for c in all_cols if c.startswith('opp_')]
+INPUT_FEATURES = FEATURES + OPPONENT_ONE_HOT_COLS
+TARGET_FEATURES = FEATURES
 
 model = TransformerDecoderOnly(
-    input_dim=len(FEATURES),
+    input_dim=len(INPUT_FEATURES),
     model_dim=128,
     num_heads=4,
     num_layers=4,
     dropout=0.1,
-    output_dim=len(FEATURES),
+    output_dim=len(TARGET_FEATURES),
     context_length=CONTEXT_LENGTH,
-    forecast_length=FORECAST_LENGTH
+    forecast_length=FORECAST_LENGTH,
+    known_future_dim=len(OPPONENT_ONE_HOT_COLS),
 )
 model.load_state_dict(torch.load(MODEL_PATH, map_location=torch.device("cpu")))
 model.eval()
@@ -57,19 +53,21 @@ model.eval()
 df = pd.read_parquet(PARQUET_PATH)
 df = df[(df.name == PLAYER_NAME) & (df.year == YEAR)].sort_values("week")
 
-context = df.head(CONTEXT_LENGTH)[FEATURES].to_numpy(dtype="float32")
-actual = df.iloc[CONTEXT_LENGTH:CONTEXT_LENGTH + FORECAST_LENGTH][FEATURES].reset_index(drop=True)
+context = df.head(CONTEXT_LENGTH)[INPUT_FEATURES].to_numpy(dtype="float32")
+actual = df.iloc[CONTEXT_LENGTH:CONTEXT_LENGTH + FORECAST_LENGTH][TARGET_FEATURES].reset_index(drop=True)
+future_known = df.iloc[CONTEXT_LENGTH:CONTEXT_LENGTH + FORECAST_LENGTH][OPPONENT_ONE_HOT_COLS].to_numpy(dtype="float32") if OPPONENT_ONE_HOT_COLS else pd.DataFrame(index=actual.index).to_numpy(dtype="float32")
 context_tensor = torch.tensor(context).unsqueeze(0)  # shape: (1, context_length, input_dim)
+future_known_tensor = torch.tensor(future_known).unsqueeze(0)  # shape: (1, forecast_length, known_future_dim)
 
 # --- Predict ---
 with torch.no_grad():
-    pred = model(context_tensor).squeeze(0).numpy()  # shape: (forecast_length, feature_dim)
+    pred = model(context_tensor, future_known=future_known_tensor).squeeze(0).numpy()
 
 # --- Denormalize ---
 stats = load_stats(NORMALIZATION_STATS)
-pred_df = pd.DataFrame(reverse_normalization(pred, FEATURES, stats), columns=FEATURES)
+pred_df = pd.DataFrame(reverse_normalization(pred, TARGET_FEATURES, stats), columns=TARGET_FEATURES)
 pred_df["week"] = list(range(CONTEXT_LENGTH + 1, CONTEXT_LENGTH + FORECAST_LENGTH + 1))
-actual_df = pd.DataFrame(reverse_normalization(actual.to_numpy(), FEATURES, stats), columns=FEATURES)
+actual_df = pd.DataFrame(reverse_normalization(actual.to_numpy(), TARGET_FEATURES, stats), columns=TARGET_FEATURES)
 actual_df["week"] = pred_df["week"]
 
 # # --- Plot ---
@@ -90,13 +88,13 @@ actual_df["week"] = pred_df["week"]
 # Create a figure with dropdown
 fig = go.Figure()
 
-for feat in FEATURES:
+for feat in TARGET_FEATURES:
     # Predicted trace
     fig.add_trace(go.Scatter(
         x=pred_df["week"], y=pred_df[feat],
         mode="lines+markers",
         name=f"Predicted {feat}",
-        visible=(feat == FEATURES[0])  # Only show first initially
+        visible=(feat == TARGET_FEATURES[0])  # Only show first initially
     ))
 
     # Actual trace
@@ -105,13 +103,13 @@ for feat in FEATURES:
         mode="lines+markers",
         line=dict(dash="dash"),
         name=f"Actual {feat}",
-        visible=(feat == FEATURES[0])
+        visible=(feat == TARGET_FEATURES[0])
     ))
 
 # Create dropdown options
 dropdown_buttons = []
-for i, feat in enumerate(FEATURES):
-    visibility = [False] * len(FEATURES) * 2
+for i, feat in enumerate(TARGET_FEATURES):
+    visibility = [False] * len(TARGET_FEATURES) * 2
     visibility[i * 2] = True      # Predicted
     visibility[i * 2 + 1] = True  # Actual
     dropdown_buttons.append(dict(
@@ -128,7 +126,7 @@ fig.update_layout(
         x=1.2,
         y=1.0
     )],
-    title=f"{FEATURES[0]}: Predicted vs Actual for {PLAYER_NAME}",
+    title=f"{TARGET_FEATURES[0]}: Predicted vs Actual for {PLAYER_NAME}",
     xaxis_title="Week",
     yaxis_title="Value",
     height=550,

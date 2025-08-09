@@ -69,6 +69,10 @@ if __name__ == "__main__":
     ]
 
     df = pd.read_parquet(INPUT_PARQUET)
+    # One-hot encode opponent as additional input columns (not normalized)
+    if 'opponent' in df.columns:
+        opp_dummies = pd.get_dummies(df['opponent'].fillna('UNKNOWN'), prefix='opp')
+        df = pd.concat([df, opp_dummies], axis=1)
     stats = compute_normalization_stats(df, features)
     save_stats(stats, STATS_JSON)
 
