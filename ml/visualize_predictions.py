@@ -29,10 +29,28 @@ FEATURES = [
     'madeFieldGoals', 'attemptedFieldGoals', 'madeExtraPoints', 'attemptedExtraPoints'
 ]
 
+# Defense features
+DEFENSE_FEATURES = [
+    'def_pi_receivingYards', 'def_pi_receivingReceptions', 'def_pi_receivingTouchdowns', 
+    'def_pi_receivingTargets', 'def_pi_receivingYardsAfterCatch', 
+    'def_pi_receiving100To199YardGame', 'def_pi_receiving200PlusYardGame',
+    'def_pi_rushingYards', 'def_pi_rushingTouchdowns', 'def_pi_rushingAttempts',
+    'def_pi_rushing40PlusYardTD', 'def_pi_rushing50PlusYardTD', 
+    'def_pi_rushing100To199YardGame', 'def_pi_rushing200PlusYardGame',
+    'def_pi_passingYards', 'def_pi_passingTouchdowns', 'def_pi_passingInterceptions',
+    'def_pi_passingAttempts', 'def_pi_passingCompletions', 'def_pi_passing40PlusYardTD',
+    'def_pi_passing50PlusYardTD', 'def_pi_passing300To399YardGame', 
+    'def_pi_passing400PlusYardGame', 'def_pi_passing2PtConversions',
+    'def_pi_madeFieldGoals', 'def_pi_attemptedFieldGoals', 'def_pi_madeExtraPoints', 
+    'def_pi_attemptedExtraPoints', 'def_pi_madeFieldGoalsFrom50Plus', 
+    'def_pi_attemptedFieldGoalsFrom50Plus', 'def_pi_madeFieldGoalsFromUnder40', 
+    'def_pi_attemptedFieldGoalsFromUnder40'
+]
+
 # --- Build feature lists with opponent one-hot ---
 all_cols = pd.read_parquet(PARQUET_PATH).columns
 OPPONENT_ONE_HOT_COLS = [c for c in all_cols if c.startswith('opp_')]
-INPUT_FEATURES = FEATURES + OPPONENT_ONE_HOT_COLS
+INPUT_FEATURES = FEATURES + DEFENSE_FEATURES + OPPONENT_ONE_HOT_COLS
 TARGET_FEATURES = FEATURES
 
 model = TransformerDecoderOnly(
