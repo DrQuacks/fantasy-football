@@ -91,6 +91,10 @@ for doc in tqdm(cursor, desc="Processing player stats"):
             "time": stats.get("time"),
             # Grouping key to identify teammates without knowing explicit team abbrev
             "team_week_key": f"{year}-W{int(week)}-opp:{stats.get('team')}",
+            # New fields from ESPN gamelog augmentation
+            "nfl_team": stats.get("nfl_team"),
+            "nfl_opponent": stats.get("nfl_opponent"),
+            "isHome": stats.get("isHome"),
         }
 
         breakdown = stats.get("breakdown", {})
