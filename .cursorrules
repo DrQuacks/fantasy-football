@@ -1,0 +1,24 @@
+# ==========================================================
+# Cursor Editing Rules — Fantasy Football ML Project
+# ==========================================================
+
+# ------------------------------------------------------------
+# Cursor must follow all conventions defined in /ai/context/*
+# ------------------------------------------------------------
+
+# General rules
+- Use pandas for all dataframe manipulation.
+- PyTorch is the only approved ML framework.
+- numpy is allowed for numerical ops, but never as a replacement for pandas DataFrames.
+
+# Code structure
+- Keep data loading and preprocessing under `data/` or `preprocessing/`
+- Training code must remain under `ml/`
+- No new dependencies without explicit justification in the patch
+
+# Naming conventions
+- Use descriptive variable names (e.g. `receiving_yards`)
+- Comment tensor shapes in the model code where not immediately obvious
+
+# Do Not Touch
+- Files in `legacy/` unless explicitly requested
