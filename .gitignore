@@ -1,1 +1,33 @@
+# Virtual environment
 venv/
+env/
+jupyter/espn-env/
+jupyter/*/
+.venv/
+ENV/
+
+# Cache
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Data files
+*.csv
+*.parquet
+*.json
+*.pkl
+*.pickle
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/

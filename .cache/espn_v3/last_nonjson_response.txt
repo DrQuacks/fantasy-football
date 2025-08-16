@@ -1,0 +1,72 @@
+
+	<!DOCTYPE html>
+	<html class="no-icon-fonts" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="canonical" href="https://www.espn.com/fantasy/" />
+<title>Fantasy Games</title>
+<meta name="description" content="Play ESPN fantasy games. Create or join a fantasy league. Use the ESPN Draft kit, read fantasy blogs, watch video, or listen to ESPN fantasy podcasts." />
+<link rel="manifest" href="/manifest.json">
+<meta property="fb:app_id" content="116656161708917" />
+<meta property="og:site_name" content="ESPN.com" />
+<meta property="og:url" content="https://www.espn.com/fantasy/" />
+<meta property="og:title" content="Fantasy Games"/>
+<meta property="og:description" content="Play ESPN fantasy games. Create or join a fantasy league. Use the ESPN Draft kit, read fantasy blogs, watch video, or listen to ESPN fantasy podcasts." />
+<meta property="og:image" content="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Ffantasy.png"/>
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="500" />
+<meta property="og:type" content="website" />
+<meta name="twitter:site" content="espn" />
+<meta name="twitter:url" content="https://www.espn.com/fantasy/" />
+<meta name="twitter:title" content="Fantasy Games"/>
+<meta name="twitter:description" content="Play ESPN fantasy games. Create or join a fantasy league. Use the ESPN Draft kit, read fantasy blogs, watch video, or listen to ESPN fantasy podcasts." />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:app:name:iphone" content="ESPN"/>
+<meta name="twitter:app:id:iphone" content="317469184"/>
+<meta name="twitter:app:name:googleplay" content="ESPN"/>
+<meta name="twitter:app:id:googleplay" content="com.espn.score_center"/>
+<meta name="title" content="Fantasy Games"/>
+<meta name="medium" content="index" />
+
+<!-- Indicate preferred brand name for Google to display -->
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type":    "WebSite",
+		"name":     "ESPN",
+		"url":      "https://www.espn.com/"
+		
+	}
+</script>
+
+
+
+
+<link rel="preload" as="font" type="font/woff2" href="https://a.espncdn.com/fonts/1.0.74/ESPNIcons/ESPNIcons.woff2" crossorigin/><!--
+<PageMap>
+	<DataObject type="document">
+		<Attribute name="title">Fantasy Games</Attribute>
+	</DataObject>
+	<DataObject type="thumbnail">
+		<Attribute name="src" value="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Ffantasy.png" />
+		<Attribute name="width" value="500" />
+		<Attribute name="height" value="500" />
+	</DataObject>
+</PageMap>
+-->
+<script type="text/javascript" src="https://dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js"></script>
+
+<link rel="alternate" hreflang="en-us" href="https://www.espn.com/fantasy/" />
+<link rel="alternate" hreflang="en-in" href="https://www.espn.in/fantasy/" />
+<link rel="alternate" hreflang="en-au" href="https://www.espn.com.au/fantasy/" />
+<link rel="alternate" hreflang="en-sg" href="https://www.espn.com.sg/fantasy/" />
+<link rel="alternate" hreflang="en-za" href="https://africa.espn.com/fantasy/" />
+<link rel="alternate" hreflang="en-ph" href="https://www.espn.ph/fantasy/" />
+<link rel="alternate" hreflang="en-gb" href="https://www.espn.co.uk/fantasy/" />
+<script type="text/javascript">
+;(function(){
+
+function rc(a){for(var b=a+"=",c=document.cookie.split(";"),d=0;d<c.length;d++){for(var e=c[d];" "===e.charAt(0);)e=e.substring(1,e.length);if(0===e.indexOf(b))return e.substring(b.length,e.length)}return null}var _nr=!1,_nrCookie=rc("_nr");null!==_nrCookie?"1"===_nrCookie&&(_nr=!0):Math.floor(100*Math.random())+1===13?(_nr=!0,document.cookie="_nr=1; path=/"):(_nr=!1,document.cookie="_nr=0; path=/");_nr&&(function(){;window.NREUM||(NREUM={});NREUM.in

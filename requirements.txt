@@ -1,0 +1,6 @@
+espn-api
+pymongo
+pandas
+tqdm
+pyarrow
+

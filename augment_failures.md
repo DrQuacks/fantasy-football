@@ -2,7 +2,7 @@
 
 - Years processed: 2019–2024
 - Mongo collection: fantasy_football.player_stats
-- Documents scanned: 1323
+- Documents scanned: 3559
 - Documents updated: 1319
 
 ## Fetch/Parse Failures
@@ -14,9 +14,2247 @@
 - Zach Miller (12699) 2019: no events returned
 - Michael Thomas (2976316) 2021: no events returned
 - Odell Beckham Jr. (16733) 2022: no events returned
+- Andrew Luck (14874) 2019: no events returned
+- Colin Kaepernick (14001) 2019: no events returned
+- Alex Smith (8416) 2019: no events returned
+- Nathan Peterman (2972236) 2019: no events returned
+- Jay Cutler (9597) 2019: no events returned
+- Mark Sanchez (12482) 2019: no events returned
+- Chad Kelly (2977665) 2019: no events returned
+- Easton Stick (3120590) 2019: no events returned
+- DeShone Kizer (3129302) 2019: no events returned
+- Sam Bradford (13197) 2019: no events returned
+- Carson Palmer (4459) 2019: no events returned
+- Tyree Jackson (3916564) 2019: no events returned
+- Brock Osweiler (14879) 2019: no events returned
+- Paxton Lynch (2977881) 2019: no events returned
+- Kellen Clemens (9635) 2019: no events returned
+- Tom Savage (16943) 2019: no events returned
+- Nick Fitzgerald (3087801) 2019: no events returned
+- Blaine Gabbert (13987) 2019: no events returned
+- Kyle Sloter (2972092) 2019: no events returned
+- Drew Stanton (10487) 2019: no events returned
+- Josh Johnson (11394) 2019: no events returned
+- Matt Cassel (8644) 2019: no events returned
+- Kyle Lauletta (3049872) 2019: no events returned
+- Brandon Doughty (2517676) 2019: no events returned
+- Cardale Jones (2976299) 2019: no events returned
+- Brandon Weeden (14878) 2019: no events returned
+- Christian Hackenberg (3057986) 2019: no events returned
+- EJ Manuel (15803) 2019: no events returned
+- Ryan Mallett (14037) 2019: no events returned
+- Landry Jones (15904) 2019: no events returned
+- Alex McGough (3128843) 2019: no events returned
+- Scott Tolzien (14353) 2019: no events returned
+- Logan Woodside (3042749) 2019: no events returned
+- T.J. Yates (14114) 2019: no events returned
+- Bryce Petty (2466005) 2019: no events returned
+- Brett Rypien (3722362) 2019: no events returned
+- Connor Cook (2576261) 2019: no events returned
+- Jake Rudock (2582424) 2019: no events returned
+- Joe Callahan (3078660) 2019: no events returned
+- Danny Etling (3052450) 2019: no events returned
+- Lamar Miller (14886) 2019: no events returned
+- Bryce Love (3931398) 2019: no events returned
+- Theo Riddick (15994) 2019: no events returned
+- Isaiah Crowell (17133) 2019: no events returned
+- Rodney Anderson (3705353) 2019: no events returned
+- Kenneth Dixon (2971888) 2019: no events returned
+- Alfred Blue (16921) 2019: no events returned
+- Elijah McGuire (3042494) 2019: no events returned
+- Doug Martin (14885) 2019: no events returned
+- Eddie Lacy (15848) 2019: no events returned
+- Damarea Crockett (4035102) 2019: no events returned
+- LeGarrette Blount (13213) 2019: no events returned
+- Glenn Gronkowski (2977698) 2019: no events returned
+- Jamaal Charles (11307) 2019: no events returned
+- Hakeem Butler (3917940) 2019: no events returned
+- Jalen Hurd (3115328) 2019: no events returned
+- Dez Bryant (13215) 2019: no events returned
+- Equanimeous St. Brown (3932442) 2019: no events returned
+- Doug Baldwin (14221) 2019: no events returned
+- Trent Taylor (3040569) 2019: no events returned
+- Corey Coleman (2978929) 2019: no events returned
+- Jake Butt (3045225) 2019: no events returned
+- Kahale Warring (3933327) 2019: no events returned
+- Antonio Gates (5362) 2019: no events returned
+- Ed Dickson (13272) 2019: no events returned
+- Austin Seferian-Jenkins (16795) 2019: no events returned
+- Michael Hoomanawanui (13387) 2019: no events returned
+- Anthony Fasano (9639) 2019: no events returned
+- C.J. Conrad (3915230) 2019: no events returned
+- Martellus Bennett (11295) 2019: no events returned
+- Dwayne Allen (14901) 2019: no events returned
+- Caleb Wilson (3932936) 2019: no events returned
+- Joshua Dobbs (3044720) 2019: no events returned
+- Mike White (3051381) 2019: no events returned
+- Taylor Heinicke (2565969) 2019: no events returned
+- Jerick McKinnon (16782) 2019: no events returned
+- D'Onta Foreman (3125116) 2019: no events returned
+- Alex Collins (3046409) 2019: no events returned
+- Jordan Reed (15860) 2019: no events returned
+- Rob Gronkowski (13229) 2019: no events returned
+- Graham Gano (12460) 2019: no events returned
+- Giorgio Tavecchio (15245) 2019: no events returned
+- Sebastian Janikowski (2148) 2019: no events returned
+- Blair Walsh (15058) 2019: no events returned
+- Taylor Bertolet (2578718) 2019: no events returned
+- Nick Novak (9329) 2019: no events returned
+- Phil Dawson (1440) 2019: no events returned
+- Travis Coons (17130) 2019: no events returned
+- Roberto Aguayo (2978887) 2019: no events returned
+- Chris Blewitt (3045141) 2019: no events returned
+- Matthew McCrane (3052413) 2019: no events returned
+- Caleb Sturgis (15918) 2019: no events returned
+- Chandler Catanzaro (16976) 2019: no events returned
+- Andrew Franks (3893609) 2019: no events returned
+- Patrick Murray (16684) 2019: no events returned
+- Nick Rose (2971728) 2019: no events returned
+- Connor Barth (11737) 2019: no events returned
+- Colin Kaepernick (14001) 2020: no events returned
+- Jordan Love (4036378) 2020: no events returned
+- Andrew Luck (14874) 2020: no events returned
+- Eli Manning (5526) 2020: no events returned
+- Jacob Eason (4035003) 2020: no events returned
+- Mark Sanchez (12482) 2020: no events returned
+- Josh Rosen (3886377) 2020: no events returned
+- Sam Bradford (13197) 2020: no events returned
+- Cole McDonald (4038220) 2020: no events returned
+- Sean Mannion (2517017) 2020: no events returned
+- Will Grier (3115252) 2020: no events returned
+- Anthony Gordon (4055171) 2020: no events returned
+- Tyree Jackson (3916564) 2020: no events returned
+- Brett Hundley (2577189) 2020: no events returned
+- Devlin Hodges (3127051) 2020: no events returned
+- Brock Osweiler (14879) 2020: no events returned
+- Matt Cassel (8644) 2020: no events returned
+- Nate Stanley (4036149) 2020: no events returned
+- Nick Fitzgerald (3087801) 2020: no events returned
+- James Morgan (3914395) 2020: no events returned
+- DeShone Kizer (3129302) 2020: no events returned
+- Brandon Weeden (14878) 2020: no events returned
+- Cooper Rush (2972515) 2020: no events returned
+- Josh Johnson (11394) 2020: no events returned
+- Josh McCown (3609) 2020: no events returned
+- Chad Kelly (2977665) 2020: no events returned
+- Derek Anderson (8627) 2020: no events returned
+- Jake Rudock (2582424) 2020: no events returned
+- Paxton Lynch (2977881) 2020: no events returned
+- Luke Falk (3052061) 2020: no events returned
+- Mike White (3051381) 2020: no events returned
+- Danny Etling (3052450) 2020: no events returned
+- Trevor Siemian (2511109) 2020: no events returned
+- Derrius Guice (3843750) 2020: no events returned
+- Damien Williams (17359) 2020: no events returned
+- Ryquell Armstead (3923397) 2020: no events returned
+- Bryce Love (3931398) 2020: no events returned
+- Marshawn Lynch (10456) 2020: no events returned
+- Eno Benjamin (4242873) 2020: no events returned
+- Jamaal Charles (11307) 2020: no events returned
+- LeGarrette Blount (13213) 2020: no events returned
+- Jay Ajayi (2573300) 2020: no events returned
+- Josh Gordon (15705) 2020: no events returned
+- Tyrell Williams (2587819) 2020: no events returned
+- Phillip Dorsett II (2579604) 2020: no events returned
+- Devin Funchess (2977609) 2020: no events returned
+- Antonio Gates (5362) 2020: no events returned
+- Thaddeus Moss (4036189) 2020: no events returned
+- Delanie Walker (9761) 2020: no events returned
+- Josh Oliver (3921690) 2020: no events returned
+- Vernon Davis (9592) 2020: no events returned
+- Jared Pinkney (3915772) 2020: no events returned
+- Ben Watson (5557) 2020: no events returned
+- Carson Meier (3116384) 2020: no events returned
+- Bradley Sowell (15284) 2020: no events returned
+- Ed Dickson (13272) 2020: no events returned
+- Austin Seferian-Jenkins (16795) 2020: no events returned
+- Garrett Dickerson (3116132) 2020: no events returned
+- Adam Vinatieri (1097) 2020: no events returned
+- Justin Rohrwasser (3913295) 2020: no events returned
+- Sebastian Janikowski (2148) 2020: no events returned
+- Eddy Pineiro (4034949) 2020: no events returned
+- Phil Dawson (1440) 2020: no events returned
+- Matt Bryant (4333) 2020: no events returned
+- Brett Maher (16486) 2020: no events returned
+- Greg Joseph (3975763) 2020: no events returned
+- Matthew McCrane (3052413) 2020: no events returned
+- Giorgio Tavecchio (15245) 2020: no events returned
+- Chandler Catanzaro (16976) 2020: no events returned
+- Caleb Sturgis (15918) 2020: no events returned
+- Deshaun Watson (3122840) 2021: no events returned
+- Eli Manning (5526) 2021: no events returned
+- Drew Brees (2580) 2021: no events returned
+- Trace McSorley (3116172) 2021: no events returned
+- Philip Rivers (5529) 2021: no events returned
+- Kyle Trask (4034946) 2021: no events returned
+- Ben DiNucci (3895785) 2021: no events returned
+- Dwayne Haskins (4040616) 2021: no events returned
+- Robert Griffin III (14875) 2021: no events returned
+- Kyle Shurmur (3915776) 2021: no events returned
+- Blake Bortles (16724) 2021: no events returned
+- Joshua Dobbs (3044720) 2021: no events returned
+- Will Grier (3115252) 2021: no events returned
+- Anthony Gordon (4055171) 2021: no events returned
+- Easton Stick (3120590) 2021: no events returned
+- Alex Smith (8416) 2021: no events returned
+- Jarrett Stidham (3892775) 2021: no events returned
+- Cole McDonald (4038220) 2021: no events returned
+- Josh McCown (3609) 2021: no events returned
+- Matt Barkley (15948) 2021: no events returned
+- DeShone Kizer (3129302) 2021: no events returned
+- AJ McCarron (16810) 2021: no events returned
+- Devlin Hodges (3127051) 2021: no events returned
+- James Morgan (3914395) 2021: no events returned
+- Matt Schaub (5615) 2021: no events returned
+- Joe Webb (13484) 2021: no events returned
+- Nate Stanley (4036149) 2021: no events returned
+- Nick Fitzgerald (3087801) 2021: no events returned
+- Kyle Sloter (2972092) 2021: no events returned
+- Brett Hundley (2577189) 2021: no events returned
+- Tyler Bray (16252) 2021: no events returned
+- Nate Sudfeld (2979501) 2021: no events returned
+- Jake Luton (3124900) 2021: no events returned
+- J.K. Dobbins (4241985) 2021: no events returned
+- Gus Edwards (3051926) 2021: no events returned
+- Travis Etienne Jr. (4239996) 2021: no events returned
+- Tarik Cohen (3066158) 2021: no events returned
+- Marshawn Lynch (10456) 2021: no events returned
+- Todd Gurley II (2977644) 2021: no events returned
+- Xavier Jones (3916209) 2021: no events returned
+- Frank Gore (8479) 2021: no events returned
+- Justice Hill (4038441) 2021: no events returned
+- LeSean McCoy (12514) 2021: no events returned
+- Javian Hawkins (4360802) 2021: no events returned
+- Kerryon Johnson (3916925) 2021: no events returned
+- Derrius Guice (3843750) 2021: no events returned
+- Larry Fitzgerald (5528) 2021: no events returned
+- Dez Bryant (13215) 2021: no events returned
+- Julian Edelman (12649) 2021: no events returned
+- Irv Smith Jr. (4040980) 2021: no events returned
+- Tim Tebow (13200) 2021: no events returned
+- Jake Butt (3045225) 2021: no events returned
+- Greg Olsen (10475) 2021: no events returned
+- Jason Witten (4527) 2021: no events returned
+- Jacob Harris (3932144) 2021: no events returned
+- Thaddeus Moss (4036189) 2021: no events returned
+- Devin Asiasi (4046522) 2021: no events returned
+- Kelvin Benjamin (16730) 2021: no events returned
+- Vernon Davis (9592) 2021: no events returned
+- Delanie Walker (9761) 2021: no events returned
+- Zach Davidson (4746079) 2021: no events returned
+- Garrett Dickerson (3116132) 2021: no events returned
+- Wil Lutz (2985659) 2021: no events returned
+- Adam Vinatieri (1097) 2021: no events returned
+- Quinn Nordin (4046532) 2021: no events returned
+- Stephen Gostkowski (9704) 2021: no events returned
+- Sam Ficken (2582139) 2021: no events returned
+- Jon Brown (3135726) 2021: no events returned
+- Tucker McCann (4035098) 2021: no events returned
+- Dan Bailey (14322) 2021: no events returned
+- Matt Bryant (4333) 2021: no events returned
+- Mike Nugent (8461) 2021: no events returned
+- Stephen Hauschka (11923) 2021: no events returned
+- Taylor Russolino (4611153) 2021: no events returned
+- Justin Rohrwasser (3913295) 2021: no events returned
+- Matthew McCrane (3052413) 2021: no events returned
+- Kai Forbath (14816) 2021: no events returned
+- Sam Sloman (4038994) 2021: no events returned
+- Brandon Wright (3917558) 2021: no events returned
+- Sergio Castillo (17480) 2021: no events returned
+- Drew Brees (2580) 2022: no events returned
+- Colin Kaepernick (14001) 2022: no events returned
+- Drew Lock (3924327) 2022: no events returned
+- Ben Roethlisberger (5536) 2022: no events returned
+- Matt Corral (4362874) 2022: no events returned
+- Cam Newton (13994) 2022: no events returned
+- Robert Griffin III (14875) 2022: no events returned
+- Philip Rivers (5529) 2022: no events returned
+- Blake Bortles (16724) 2022: no events returned
+- Mason Rudolph (3116407) 2022: no events returned
+- Mike Glennon (15837) 2022: no events returned
+- Ryan Fitzpatrick (8664) 2022: no events returned
+- Ben DiNucci (3895785) 2022: no events returned
+- Chris Oladokun (4044111) 2022: no events returned
+- Ian Book (4046678) 2022: no events returned
+- Carson Strong (4361435) 2022: no events returned
+- Kyle Shurmur (3915776) 2022: no events returned
+- Jordan Ta'amu (4242418) 2022: no events returned
+- Alex Smith (8416) 2022: no events returned
+- Jake Fromm (4240689) 2022: no events returned
+- Kurt Benkert (3040535) 2022: no events returned
+- Matt Barkley (15948) 2022: no events returned
+- Josh Rosen (3886377) 2022: no events returned
+- Matt Schaub (5615) 2022: no events returned
+- Will Grier (3115252) 2022: no events returned
+- AJ McCarron (16810) 2022: no events returned
+- Anthony Gordon (4055171) 2022: no events returned
+- Sean Mannion (2517017) 2022: no events returned
+- Shane Buechele (4039034) 2022: no events returned
+- Ryan Griffin (16140) 2022: no events returned
+- Nate Stanley (4036149) 2022: no events returned
+- Garrett Gilbert (16809) 2022: no events returned
+- Kevin Hogan (2577128) 2022: no events returned
+- Nick Fitzgerald (3087801) 2022: no events returned
+- Chris Carson (3919596) 2022: no events returned
+- Adrian Peterson (10452) 2022: no events returned
+- Frank Gore (8479) 2022: no events returned
+- James White (16913) 2022: no events returned
+- Todd Gurley II (2977644) 2022: no events returned
+- Le'Veon Bell (15825) 2022: no events returned
+- Calvin Ridley (3925357) 2022: no events returned
+- John Metchie III (4567096) 2022: no events returned
+- Antonio Brown (13934) 2022: no events returned
+- Tim Patrick (3134353) 2022: no events returned
+- Larry Fitzgerald (5528) 2022: no events returned
+- Calvin Austin III (4243389) 2022: no events returned
+- Justyn Ross (4360306) 2022: no events returned
+- Rob Gronkowski (13229) 2022: no events returned
+- Jake Butt (3045225) 2022: no events returned
+- Jason Witten (4527) 2022: no events returned
+- Jimmy Graham (13232) 2022: no events returned
+- Greg Olsen (10475) 2022: no events returned
+- Jalen Wydermyer (4428952) 2022: no events returned
+- Jared Cook (12537) 2022: no events returned
+- Blake Jarwin (2991767) 2022: no events returned
+- James O'Shaughnessy (2508079) 2022: no events returned
+- Chris Naggar (4241822) 2022: no events returned
+- Jonathan Garibay (4569390) 2022: no events returned
+- Stephen Gostkowski (9704) 2022: no events returned
+- Zane Gonzalez (3043234) 2022: no events returned
+- James McCourt (4033806) 2022: no events returned
+- Lirim Hajrullahu (4682912) 2022: no events returned
+- Jon Brown (3135726) 2022: no events returned
+- Cody Parkey (17082) 2022: no events returned
+- Dan Bailey (14322) 2022: no events returned
+- Quinn Nordin (4046532) 2022: no events returned
+- Chris Blewitt (3045141) 2022: no events returned
+- Ryan Santoso (3040204) 2022: no events returned
+- Mike Nugent (8461) 2022: no events returned
+- Stephen Hauschka (11923) 2022: no events returned
+- Elliott Fry (3048898) 2022: no events returned
+- Aldrick Rosas (3068939) 2022: no events returned
+- Sam Ficken (2582139) 2022: no events returned
+- Alex Kessman (4046164) 2022: no events returned
+- Brian Johnson (4046184) 2022: no events returned
+- Justin Rohrwasser (3913295) 2022: no events returned
+- Brandon Wright (3917558) 2022: no events returned
+- Kai Forbath (14816) 2022: no events returned
+- Sergio Castillo (17480) 2022: no events returned
+- Tucker McCann (4035098) 2022: no events returned
+- Taylor Russolino (4611153) 2022: no events returned
+- Sam Sloman (4038994) 2022: no events returned
+- Tom Brady (2330) 2023: no events returned
+- Ben Roethlisberger (5536) 2023: no events returned
+- Trey Lance (4383351) 2023: no events returned
+- Hendon Hooker (4240858) 2023: no events returned
+- Cam Newton (13994) 2023: no events returned
+- Stetson Bennett (4259553) 2023: no events returned
+- Trace McSorley (3116172) 2023: no events returned
+- Ryan Fitzpatrick (8664) 2023: no events returned
+- Nick Foles (14877) 2023: no events returned
+- Matt Ryan (11237) 2023: no events returned
+- Max Duggan (4427105) 2023: no events returned
+- Ben DiNucci (3895785) 2023: no events returned
+- Mike Glennon (15837) 2023: no events returned
+- Colt McCoy (13199) 2023: no events returned
+- Tanner McKee (4685201) 2023: no events returned
+- Skylar Thompson (4036419) 2023: no events returned
+- Matt Corral (4362874) 2023: no events returned
+- Chad Henne (11291) 2023: no events returned
+- Bryce Perkins (3675812) 2023: no events returned
+- Kurt Benkert (3040535) 2023: no events returned
+- Josh Rosen (3886377) 2023: no events returned
+- Brandon Allen (2574511) 2023: no events returned
+- Josh Johnson (11394) 2023: no events returned
+- Jake Haener (4243322) 2023: no events returned
+- Anthony Brown (4035312) 2023: no events returned
+- Ian Book (4046678) 2023: no events returned
+- Jake Fromm (4240689) 2023: no events returned
+- Will Grier (3115252) 2023: no events returned
+- Carson Strong (4361435) 2023: no events returned
+- Nate Sudfeld (2979501) 2023: no events returned
+- Chris Oladokun (4044111) 2023: no events returned
+- Kellen Mond (4240904) 2023: no events returned
+- Chase Daniel (12471) 2023: no events returned
+- Adrian Peterson (10452) 2023: no events returned
+- Ronald Jones (3912550) 2023: no events returned
+- Le'Veon Bell (15825) 2023: no events returned
+- Nyheim Hines (3916430) 2023: no events returned
+- Hassan Haskins (4372071) 2023: no events returned
+- Antonio Brown (13934) 2023: no events returned
+- Josh Gordon (15705) 2023: no events returned
+- Martavis Bryant (16886) 2023: no events returned
+- A.J. Green (13983) 2023: no events returned
+- Rob Gronkowski (13229) 2023: no events returned
+- Jelani Woods (4241410) 2023: no events returned
+- Cameron Latu (4372026) 2023: no events returned
+- Kyle Rudolph (14054) 2023: no events returned
+- Roger Carter Jr. (4241273) 2023: no events returned
+- Armani Rogers (4056052) 2023: no events returned
+- Paul Quessenberry (2575891) 2023: no events returned
+- Jody Fortson (4408854) 2023: no events returned
+- Jared Cook (12537) 2023: no events returned
+- Tristan Vizcaino (3127313) 2023: no events returned
+- Rodrigo Blankenship (3915165) 2023: no events returned
+- Chris Naggar (4241822) 2023: no events returned
+- Zane Gonzalez (3043234) 2023: no events returned
+- Cade York (4428963) 2023: no events returned
+- Robbie Gould (9354) 2023: no events returned
+- Tanner Brown (4696736) 2023: no events returned
+- Christopher Dunn (4361665) 2023: no events returned
+- Cody Parkey (17082) 2023: no events returned
+- Nick Sciba (4362020) 2023: no events returned
+- Lirim Hajrullahu (4682912) 2023: no events returned
+- Elliott Fry (3048898) 2023: no events returned
+- Ryan Succop (12731) 2023: no events returned
+- Chris Blewitt (3045141) 2023: no events returned
+- Josh Lambo (2998120) 2023: no events returned
+- Caleb Shudak (4036146) 2023: no events returned
+- James McCourt (4033806) 2023: no events returned
+- Justin Rohrwasser (3913295) 2023: no events returned
+- Aldrick Rosas (3068939) 2023: no events returned
+- Dominik Eberle (3932960) 2023: no events returned
+- Brandon Wright (3917558) 2023: no events returned
+- Alex Kessman (4046164) 2023: no events returned
+- Ryan Santoso (3040204) 2023: no events returned
+- Taylor Bertolet (2578718) 2023: no events returned
+- Brian Johnson (4046184) 2023: no events returned
+- Jonathan Garibay (4569390) 2023: no events returned
+- Sam Sloman (4038994) 2023: no events returned
+- Tucker McCann (4035098) 2023: no events returned
+- Quinn Nordin (4046532) 2023: no events returned
+- Tom Brady (2330) 2024: no events returned
+- J.J. McCarthy (4433970) 2024: no events returned
+- Nick Foles (14877) 2024: no events returned
+- Matt Ryan (11237) 2024: no events returned
+- Trace McSorley (3116172) 2024: no events returned
+- Zach Wilson (4361259) 2024: no events returned
+- Jordan Travis (4360799) 2024: no events returned
+- Stetson Bennett (4259553) 2024: no events returned
+- Nathan Peterman (2972236) 2024: no events returned
+- Ben DiNucci (3895785) 2024: no events returned
+- Michael Pratt (4685039) 2024: no events returned
+- Colt McCoy (13199) 2024: no events returned
+- Ryan Tannehill (14876) 2024: no events returned
+- Sean Clifford (4259592) 2024: no events returned
+- Case Keenum (15168) 2024: no events returned
+- Max Duggan (4427105) 2024: no events returned
+- Nathan Rourke (4244688) 2024: no events returned
+- Easton Stick (3120590) 2024: no events returned
+- Devin Leary (4361653) 2024: no events returned
+- Chad Henne (11291) 2024: no events returned
+- Sam Ehlinger (4241820) 2024: no events returned
+- Ian Book (4046678) 2024: no events returned
+- Anthony Brown Jr. (4035312) 2024: no events returned
+- Shane Buechele (4039034) 2024: no events returned
+- Brett Rypien (3722362) 2024: no events returned
+- Jaren Hall (4373632) 2024: no events returned
+- Jake Fromm (4240689) 2024: no events returned
+- Blaine Gabbert (13987) 2024: no events returned
+- Matt Corral (4362874) 2024: no events returned
+- AJ McCarron (16810) 2024: no events returned
+- Matt Barkley (15948) 2024: no events returned
+- Brian Hoyer (12477) 2024: no events returned
+- C.J. Beathard (2979520) 2024: no events returned
+- Carson Strong (4361435) 2024: no events returned
+- Bryce Perkins (3675812) 2024: no events returned
+- Trevor Siemian (2511109) 2024: no events returned
+- Davis Webb (3052600) 2024: no events returned
+- PJ Walker (3051308) 2024: no events returned
+- Israel Abanikanda (4429202) 2024: no events returned
+- Elijah Mitchell (4241555) 2024: no events returned
+- AJ Dillon (4239934) 2024: no events returned
+- Leonard Fournette (3115364) 2024: no events returned
+- Chase Edmonds (3119195) 2024: no events returned
+- Mark Ingram II (13981) 2024: no events returned
+- Nyheim Hines (3916430) 2024: no events returned
+- Melvin Gordon III (2576434) 2024: no events returned
+- David Johnson (2508176) 2024: no events returned
+- Louis Rees-Zammit (5208436) 2024: no events returned
+- Rex Burkhead (15971) 2024: no events returned
+- Frank Gore Jr. (4429805) 2024: no events returned
+- Royce Freeman (3122672) 2024: no events returned
+- Julio Jones (13982) 2024: no events returned
+- Michael Thomas (2976316) 2024: no events returned
+- Rondale Moore (4372485) 2024: no events returned
+- Darren Waller (2576925) 2024: no events returned
+- Jimmy Graham (13232) 2024: no events returned
+- Jelani Woods (4241410) 2024: no events returned
+- Albert Okwuegbunam Jr. (4035115) 2024: no events returned
+- Kyle Rudolph (14054) 2024: no events returned
+- Cole Fotheringham (4361008) 2024: no events returned
+- Logan Thomas (16813) 2024: no events returned
+- Michael Badgley (3123052) 2024: no events returned
+- Rodrigo Blankenship (3915165) 2024: no events returned
+- Chris Naggar (4241822) 2024: no events returned
+- Mason Crosby (10636) 2024: no events returned
+- Tanner Brown (4696736) 2024: no events returned
+- Ramiz Ahmed (4266790) 2024: no events returned
+- Robbie Gould (9354) 2024: no events returned
+- Lucas Havrisik (4245661) 2024: no events returned
+- Christopher Dunn (4361665) 2024: no events returned
+- Josh Lambo (2998120) 2024: no events returned
+- Brett Maher (16486) 2024: no events returned
+- Ryan Succop (12731) 2024: no events returned
+- Nick Sciba (4362020) 2024: no events returned
+- Randy Bullock (15091) 2024: no events returned
+- Matt Ammendola (3919602) 2024: no events returned
+- Jonathan Garibay (4569390) 2024: no events returned
+- Caleb Shudak (4036146) 2024: no events returned
+- Alex Kessman (4046164) 2024: no events returned
+- James McCourt (4033806) 2024: no events returned
+- Brian Johnson (4046184) 2024: no events returned
+- Taylor Bertolet (2578718) 2024: no events returned
+- Dominik Eberle (3932960) 2024: no events returned
+- Tristan Vizcaino (3127313) 2024: no events returned
+- Quinn Nordin (4046532) 2024: no events returned
 
 ## No Matching Weeks
-- None
+
+_(Gamelog had regular-season events, but none matched existing weekly_stats keys in Mongo.)_
+
+- Drew Lock (3924327) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Rudolph (3116407) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dwayne Haskins Jr. (4040616) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Case Keenum (15168) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Griffin III (14875) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devlin Hodges (3127051) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Blough (3116188) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Grier (3115252) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Finley (3042876) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Rosen (3886377) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hoyer (12477) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarrett Stidham (3892775) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- AJ McCarron (16810) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Allen (2574511) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Moore (11128) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Daniel (12471) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bortles (16724) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Schaub (5615) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colt McCoy (13199) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trace McSorley (3116172) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh McCown (3609) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean Mannion (2517017) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Barkley (15948) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Hundley (2577189) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Griffin (16140) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevor Siemian (2511109) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Falk (3052061) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Beathard (2979520) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nate Sudfeld (2979501) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Kessler (2577243) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Glennon (15837) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Garrett Gilbert (16809) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Henne (11291) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Fales (16821) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Tanney (15693) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Laird (3127211) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bo Scarbrough (3126367) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marshawn Lynch (10456) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dion Lewis (14198) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryquell Armstead (3923397) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darwin Thompson (4361606) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justice Hill (4038441) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malcolm Brown (2570986) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bilal Powell (14129) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jay Ajayi (2573300) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Montgomery (2577134) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ito Smith (3123969) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Edmunds (2970090) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Anderson (16040) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- T.J. Yeldon (2976516) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Reggie Bonnafon (3116642) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dexter Williams (3932449) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Prosise (2980148) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Qadree Ollison (3123944) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Spencer Ware (16020) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenjon Barner (15921) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Scarlett (3915115) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Hilliman (3122799) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trayveon Williams (4035222) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Wendell Smallwood (3042429) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Clement (3045260) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijhaa Penny (2575965) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Turbin (14894) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tra Carson (2972283) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alfred Morris (15009) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devine Ozigbo (3699935) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Javorius Allen (2577253) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Khari Blasingame (3122154) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kerrith Whyte (3919104) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Wes Hills (3060919) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Adams (3932420) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trenton Cannon (4261020) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Buddy Howell (3122716) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Ward Jr. (3040035) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- N'Keal Harry (4047839) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keke Coutee (3915823) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geronimo Allison (3115913) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Auden Tate (3921564) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Humphries (2576491) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Steven Sims Jr. (3917960) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Gabriel (17437) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Albert Wilson (17051) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Paul Richardson Jr. (16781) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Funchess (2977609) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demaryius Thomas (13216) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justin Watson (3118892) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Isabella (3914328) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Johnson (2971718) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.J. Arcega-Whiteside (3931397) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Erickson (2977800) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Willie Snead IV (17258) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquise Goodwin (15839) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Miles Boykin (3932423) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Hurns (17177) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bisi Johnson (3917067) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Quinn (3115365) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- KeeSean Johnson (3124537) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kelvin Harmon (4036163) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jakeem Grant (2577641) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Moore (4212909) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashard Higgins (3042910) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Antonio Callaway (3915097) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marqise Lee (16787) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quincy Enunwa (16899) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deon Cain (3728254) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Crabtree (12563) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Foster (3054845) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keelan Cole (3071572) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaron Brown (16172) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Doctson (2576019) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeAndre Carter (2580216) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Kumerow (3085107) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Latimer (16793) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chester Rogers (2983209) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tajae Sharpe (2982828) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Damiere Byrd (2577667) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Duke Williams (3115315) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Byron Pringle (4036416) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tavon Austin (15786) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Hogan (14402) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Benjamin (15062) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Smith (2576395) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Laquon Treadwell (3051889) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Ford (3124069) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Matthews (16763) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deonte Harris (4411193) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarius Wright (14918) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gary Jennings (3916071) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darren Fells (15773) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kaden Smith (4044452) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Eifert (15788) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Burton (16974) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cameron Brate (17453) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Watson (5557) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Jarwin (2991767) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Hill (16143) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jace Sternberger (3917962) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Boyle (2574591) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaeden Graham (3118954) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Oliver (3921690) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt LaCosse (2576179) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Sprinkle (2980073) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rhett Ellison (15003) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesse James (2979590) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James O'Shaughnessy (2508079) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Willson (16121) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Vannett (2576399) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demetrius Harris (16318) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Thomas (4035379) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charles Clay (14145) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geoff Swaim (3046704) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Shaheen (4198676) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Firkser (3049698) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Kroft (2582410) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Heuerman (2576389) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick O'Leary (2576804) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Seth DeValve (2566659) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Virgil Green (14085) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bell (2514206) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Izzo (3122920) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Perkins (2578377) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesper Horsted (3940587) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Stocker (14099) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Maxx Williams (2970726) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Braunecker (2969241) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Brown (2519013) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.P. Holtz (2970262) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Gentry (3929924) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Troy Fumagalli (3045264) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Sweeney (3122818) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Xavier Grimble (17348) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lance Kendricks (14007) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevon Wesco (4039253) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deon Yelder (3059766) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Levine Toilolo (15980) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Garrett Dickerson (3116132) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derek Carrier (15403) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Scott Simonson (17391) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bradley Sowell (15284) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Clive Walford (2512593) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Garrett Celek (15204) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrone Swoopes (3046705) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Travis (3936647) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Fitzpatrick (8664) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Darnold (3912547) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teddy Bridgewater (16728) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taysom Hill (2468609) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geno Smith (15864) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cooper Rush (2972515) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nyheim Hines (3916430) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alexander Mattison (4048244) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gus Edwards (3051926) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Benny Snell Jr. (4035072) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrell Henderson Jr. (4039359) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rex Burkhead (15971) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalen Ballage (3128774) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Homer (4037457) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tony Pollard (3916148) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.D. McKissic (2572861) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrel Williams (3115375) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Damien Harris (3925347) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Wilkins (3051891) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Myles Gaskin (3886818) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ameer Abdullah (2576336) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Davis (3025433) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dontrell Hilliard (3126246) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Wilson Jr. (3122976) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Bolden (15478) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devontae Booker (3122866) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Samaje Perine (3116389) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darius Slayton (3916945) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Davis (3042778) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Renfrow (3135321) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nelson Agholor (2971618) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Russell Gage (3115378) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Preston Williams (3915399) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parris Campbell (3121410) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Lazard (3128390) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Reynolds (3115306) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre'Quan Smith (3128451) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jakobi Meyers (3916433) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zay Jones (3059722) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendrick Bourne (3045523) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Patrick (3134353) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cordarrelle Patterson (15807) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Gesicki (3116164) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonnu Smith (3054212) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Irv Smith Jr. (4040980) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Herndon (3123050) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dawson Knox (3930086) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hayden Hurst (3924365) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ricky Seals-Jones (3051806) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Logan Thomas (16813) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dan Arnold (4212989) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Tonyan (2975674) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dalton Schultz (3117256) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Conklin (3915486) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Maher (16486) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Myers (2473037) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kai Forbath (14816) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dan Bailey (14322) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Vinatieri (1097) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase McLaughlin (3150744) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Hauschka (11923) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Aldrick Rosas (3068939) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Carlson (3051909) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Sanders (3124679) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dustin Hopkins (15965) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eddy Pineiro (4034949) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Succop (12731) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Nugent (8461) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randy Bullock (15091) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Ficken (2582139) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Long (2582324) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Parkey (17082) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cairo Santos (17427) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Joseph (3975763) 2019: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitchell Trubisky (3039707) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Philip Rivers (5529) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Jones (3917792) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Lock (3924327) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Dalton (14012) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Smith (8416) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jameis Winston (2969939) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Darnold (3912547) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trace McSorley (3116172) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Glennon (15837) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dwayne Haskins Jr. (4040616) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Henne (11291) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Allen (2574511) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Beathard (2979520) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colt McCoy (13199) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Rudolph (3116407) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Luton (3124900) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Griffin III (14875) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben DiNucci (3895785) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarrett Stidham (3892775) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Wolford (3124092) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Daniel (12471) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendall Hinton (3700815) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacoby Brissett (2578570) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- P.J. Walker (3051308) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Garrett Gilbert (16809) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Finley (3042876) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Barkley (15948) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nathan Peterman (2972236) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Rypien (3722362) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Case Keenum (15168) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geno Smith (15864) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hoyer (12477) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Fromm (4240689) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Heinicke (2565969) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blaine Gabbert (13987) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Streveler (3040206) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Dobbs (3044720) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bortles (16724) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Driskel (2574630) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Schaub (5615) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- AJ McCarron (16810) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Logan Woodside (3042749) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Easton Stick (3120590) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Blough (3116188) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Griffin (16140) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nate Sudfeld (2979501) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Huntley (4035671) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Moore (11128) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Bray (16252) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tony Pollard (3916148) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malcolm Brown (2570986) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Salvon Ahmed (4243315) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gus Edwards (3051926) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Frank Gore (8479) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sony Michel (3128721) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Johnson (3915411) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Carlos Hyde (16777) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lynn Bowden Jr. (4259979) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Peyton Barber (3051902) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Montgomery (2577134) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marlon Mack (3139605) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hill (3125403) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- AJ Dillon (4239934) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- La'Mical Perine (4034952) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cordarrelle Patterson (15807) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeAndre Washington (2577654) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrel Williams (3115375) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ke'Shawn Vaughn (3917612) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Thompson (15966) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ito Smith (3123969) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rodney Smith (3116074) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashaad Penny (3139925) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- LeSean McCoy (12514) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrynton Evans (4036431) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Richard (2972091) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devine Ozigbo (3699935) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dion Lewis (14198) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony McFarland Jr. (4241941) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Royce Freeman (3122672) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Samaje Perine (3116389) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Boone (3139033) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dexter Williams (3932449) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaylen Samuels (3116721) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Ernest Johnson (3139602) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Laird (3127211) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Ervin (2573974) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Homer (4037457) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy McNichols (3127586) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justice Hill (4038441) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Clement (3045260) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darwin Thompson (4361606) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trayveon Williams (4035222) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ameer Abdullah (2576336) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lamar Miller (14886) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alfred Morris (15009) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Nall (3127335) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Adams (3932420) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Reggie Bonnafon (3116642) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Troymaine Pope (2983319) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bo Scarbrough (3126367) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.J. Taylor (4039607) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- T.J. Yeldon (2976516) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Collins (3046409) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trenton Cannon (4261020) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Prosise (2980148) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alec Ingold (3917668) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Onta Foreman (3125116) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derek Watt (2576450) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Sherman (14135) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rico Dowdle (4038815) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Janovich (2974317) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Qadree Ollison (3123944) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jakobi Meyers (3916433) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sammy Watkins (16725) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Pittman Jr. (4035687) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keke Coutee (3915823) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mecole Hardman (4035004) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Golden Tate (13217) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Lazard (3128390) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Patrick (3134353) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashard Higgins (3042910) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Reagor (4241802) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Breshad Perriman (2972460) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Laviska Shenault Jr. (4243160) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Larry Fitzgerald (5528) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- N'Keal Harry (4047839) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeSean Jackson (11283) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keelan Cole Sr. (3071572) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Miller (3050487) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Renfrow (3135321) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Valdes-Scantling (3051738) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darnell Mooney (4040655) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randall Cobb (14053) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Reynolds (3115306) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parris Campbell (3121410) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Denzel Mims (4035403) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gabriel Davis (4243537) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- KJ Hamler (4240380) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Ward (3040035) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alshon Jeffery (14912) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Danny Amendola (11674) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Scotty Miller (3914397) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dez Bryant (13215) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Hansen (3066074) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Guyton (3932430) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Washington (3122449) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyron Johnson (3894912) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Pascal (2978109) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Richie James (3122899) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jakeem Grant (2577641) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Moore (4212909) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demarcus Robinson (3043116) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendrick Bourne (3045523) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Steven Sims Jr. (3917960) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Damiere Byrd (2577667) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Humphries (2576491) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Willie Snead IV (17258) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marvin Hall (2578369) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryan Edwards (4038818) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Van Jefferson (3930066) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dede Westbrook (3892889) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Duvernay (4039050) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mohamed Sanu Sr. (14922) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cam Sims (3115314) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Conley (2578533) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Braxton Berrios (3123075) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donovan Peoples-Jones (4258195) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Miles Boykin (3932423) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Isabella (3914328) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Ross III (3052177) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Stills (16016) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Antonio Gandy-Golden (4029893) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trent Taylor (3040569) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Collin Johnson (4039043) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Byron Pringle (4036416) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Callaway (4035170) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deonte Harris (4411193) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Johnson (2310331) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quintez Cephus (4035793) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ted Ginn Jr. (10453) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Olamide Zaccheaus (3917914) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.J. Arcega-Whiteside (3931397) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalif Raymond (2973405) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gunner Olszewski (4424106) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedrick Wilson (4036335) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Hogan (14402) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dontrelle Inman (14269) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamal Agnew (3061612) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dalton Schultz (3117256) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Irv Smith Jr. (4040980) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cole Kmet (4258595) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Olsen (10475) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Burton (16974) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jack Doyle (16504) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gerald Everett (3918639) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Eifert (15788) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Richard Rodgers (16786) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Harrison Bryant (4040774) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Firkser (3049698) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Dissly (3127292) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dawson Knox (3930086) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Jarwin (2991767) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darren Fells (15773) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- O.J. Howard (3043080) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dan Arnold (4212989) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donald Parham Jr. (3912092) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cameron Brate (17453) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Njoku (3123076) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jace Sternberger (3917962) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacob Hollister (3125404) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Kroft (2582410) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Vance McDonald (15853) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Trautman (3911853) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Witten (4527) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Asiasi (4046522) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Boyle (2574591) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Albert Okwuegbunam (4035115) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Butt (3045225) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kaden Smith (4044452) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ricky Seals-Jones (3051806) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Izzo (3122920) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Shaheen (4198676) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Willson (16121) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Conklin (3915486) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James O'Shaughnessy (2508079) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dalton Keene (4240861) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesse James (2979590) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bell (2514206) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Hill (16143) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Sprinkle (2980073) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Tomlinson (2511973) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Vannett (2576399) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Keizer (4329472) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deon Yelder (3059766) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Maxx Williams (2970726) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demetrius Harris (16318) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaeden Graham (3118954) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josiah Deguara (3914151) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Togiai (3930298) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brycen Hopkins (3918003) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kahale Warring (3933327) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean McKeon (4036275) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Gentry (3929924) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Anderson (2576854) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Levine Toilolo (15980) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MyCole Pruitt (2508256) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrell Daniels (3052166) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Bryant (4243318) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Manhertz (2531358) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Stocker (14099) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Troy Fumagalli (3045264) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lee Smith (14215) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colby Parkinson (4242557) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Virgil Green (14085) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Thomas (4035379) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geoff Swaim (3046704) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Brown (2519013) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Schreck (2972331) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Temarrick Hemingway (2580330) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Stevens (3791110) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ka'imi Fairbairn (2971573) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cairo Santos (17427) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Gay (4249087) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Seibert (3821683) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dan Bailey (14322) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Parkey (17082) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Nugent (8461) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dustin Hopkins (15965) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Folk (10621) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Sloman (4038994) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Lambo (2998120) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase McLaughlin (3150744) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elliott Fry (3048898) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kai Forbath (14816) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Ficken (2582139) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Hauschka (11923) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Aldrick Rosas (3068939) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matthew Wright (3128444) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sergio Castillo (17480) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jon Brown (3135726) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Russolino (4611153) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Wright (3917558) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tristan Vizcaino (3127313) 2020: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mac Jones (4241464) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Lance (4383351) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Roethlisberger (5536) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Heinicke (2565969) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jimmy Garoppolo (16760) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Wilson (4361259) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jared Goff (3046779) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gardner Minshew (4038524) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Mills (4242546) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Fitzpatrick (8664) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Love (4036378) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevor Siemian (2511109) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Dalton (14012) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Johnson (11394) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Lock (3924327) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Case Keenum (15168) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacoby Brissett (2578570) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Book (4046678) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geno Smith (15864) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Glennon (15837) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike White (3051381) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean Mannion (2517017) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Fromm (4240689) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colt McCoy (13199) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Foles (14877) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Allen (2574511) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitchell Trubisky (3039707) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Rudolph (3116407) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kellen Mond (4240904) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Ehlinger (4241820) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- P.J. Walker (3051308) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Henne (11291) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Wolford (3124092) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blaine Gabbert (13987) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacob Eason (4035003) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Daniel (12471) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nathan Peterman (2972236) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Garrett Gilbert (16809) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hoyer (12477) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Rosen (3886377) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Logan Woodside (3042749) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Beathard (2979520) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Feleipe Franks (4034948) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Blough (3116188) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Streveler (3040206) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Rypien (3722362) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kurt Benkert (3040535) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Samaje Perine (3116389) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Howard (3060022) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cam Akers (4240021) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Craig Reynolds (4421446) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ke'Shawn Vaughn (3917612) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Phillip Lindsay (3052117) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ameer Abdullah (2576336) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Duke Johnson (2969962) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Carlos Hyde (16777) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Breida (3049916) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Royce Freeman (3122672) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Giovani Bernard (15826) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Godwin Igwebuike (3045238) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tony Jones Jr. (4046676) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jermar Jefferson (4374033) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malcolm Brown (2570986) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeeJay Dallas (4240631) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- JaMycal Hasty (3928925) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Salvon Ahmed (4243315) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derrick Gore (3925346) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Boone (3139033) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Walter (3123857) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Peyton Barber (3051902) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marlon Mack (3139605) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Kelley (3910544) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kene Nwangwu (4035537) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Wayne Gallman (3045127) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Benny Snell Jr. (4035072) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.J. Taylor (4039607) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrynton Evans (4036431) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jerick McKinnon (16782) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Williams (2980077) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Clement (3045260) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Evans (4046530) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Larry Rountree III (4241205) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demetric Felton (4035826) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Taylor (4039358) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Homer (4037457) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Richard (2972091) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Qadree Ollison (3123944) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Funk (4036224) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Huntley (4040790) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony McFarland Jr. (4241941) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- La'Mical Perine (4034952) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kylin Hill (4259805) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalen Ballage (3128774) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Ward (4039274) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijhaa Penny (2575965) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derek Watt (2576450) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hill (3125403) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Janovich (2974317) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Burton (2515270) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- K.J. Osborn (3916566) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mecole Hardman (4035004) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamison Crowder (2576716) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Valdes-Scantling (3051738) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gabriel Davis (4243537) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Lazard (3128390) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nelson Agholor (2971618) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zay Jones (3059722) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randall Cobb (14053) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre'Quan Smith (3128451) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryan Edwards (4038818) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrell Williams (2587819) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Guyton (3932430) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parris Campbell (3121410) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sammy Watkins (16725) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Palmer (4242433) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Braxton Berrios (3123075) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cyril Grayson (4217370) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darius Slayton (3916945) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedrick Wilson (4036335) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Reynolds (3115306) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeSean Jackson (11283) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah McKenzie (3128724) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Terrace Marshall Jr. (4362630) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalif Raymond (2973405) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Johnson (2310331) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Byron Pringle (4036416) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deonte Harris (4411193) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Westbrook-Ikhine (3929785) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Laquon Treadwell (3051889) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Gordon (15705) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nico Collins (4258173) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeAndre Carter (2580216) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quez Watkins (4050373) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamal Agnew (3061612) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tajae Sharpe (2982828) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ray-Ray McCloud (3728262) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keelan Cole (3071572) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Breshad Perriman (2972460) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Washington (3122449) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demarcus Robinson (3043116) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Duvernay (4039050) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Freddie Swain (4034950) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quintez Cephus (4035793) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dee Eskridge (4043016) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Albert Wilson (17051) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Olamide Zaccheaus (3917914) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Brown (16804) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Humphries (2576491) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dyami Brown (4361577) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jakeem Grant Sr. (2577641) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Amari Rodgers (4239992) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Denzel Mims (4035403) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashard Higgins (3042910) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Conley (2578533) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Scotty Miller (3914397) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquise Goodwin (15839) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Antoine Wesley (4043161) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Schwartz (4371986) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Miller (3050487) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chester Rogers (2983209) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tutu Atwell (4360797) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- N'Keal Harry (4047839) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jauan Jennings (3886598) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mack Hollins (2991662) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lil'Jordan Humphrey (4039057) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dante Pettis (3127306) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Equanimeous St. Brown (3932442) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dede Westbrook (3892889) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Brown (3121409) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Danny Amendola (11674) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Evan Engram (3051876) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gerald Everett (3918639) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Njoku (3123076) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Ebron (16732) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Trautman (3911853) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Firkser (3049698) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jack Doyle (16504) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brevin Jordan (4362504) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cameron Brate (17453) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Jarwin (2991767) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendall Blanton (3122103) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James O'Shaughnessy (2508079) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- O.J. Howard (3043080) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Albert Okwuegbunam (4035115) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Juwan Johnson (3929645) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hayden Hurst (3924365) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Sweeney (3122818) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jimmy Graham (13232) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josiah Deguara (3914151) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donald Parham Jr. (3912092) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Maxx Williams (2970726) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Rudolph (14054) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geoff Swaim (3046704) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Tremble (4372780) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Gray (4240472) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Dissly (3127292) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bell (2514206) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Griffin (15887) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Bates (4048228) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Gentry (3929924) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Kroft (2582410) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Anderson (2576854) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Herndon (3123050) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Harrison Bryant (4040774) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brock Wright (4242392) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Vannett (2576399) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brycen Hopkins (3918003) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demetrius Harris (16318) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyree Jackson (3916564) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pharaoh Brown (2971281) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kylen Granson (4039160) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Long (4239944) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre' McKitty (4240023) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Yeboah (4044144) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Boyle (2574591) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrell Daniels (3052166) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean McKeon (4036275) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Shane Zylstra (4608362) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MyCole Pruitt (2508256) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darren Fells (15773) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Manhertz (2531358) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesse James (2979590) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacob Hollister (3125404) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Oliver (3921690) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Sprinkle (2980073) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jack Stoll (4034862) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Johnny Mundt (3052096) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Farrell (4040612) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jared Pinkney (3915772) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kaden Smith (4044452) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Saubert (2975863) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Helm (3115359) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lee Smith (14215) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Shaheen (4198676) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colby Parkinson (4242557) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dominique Dafney (4036129) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jody Fortson (4408854) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Brown (2519013) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesper Horsted (3940587) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Woerner (4035020) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Tomlinson (2511973) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Elliott (3050478) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Badgley (3123052) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dustin Hopkins (15965) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Lambo (2998120) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rodrigo Blankenship (3915165) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zane Gonzalez (3043234) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joey Slye (3124084) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cairo Santos (17427) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Aldrick Rosas (3068939) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Maher (16486) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tristan Vizcaino (3127313) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elliott Fry (3048898) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ka'imi Fairbairn (2971573) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Parkey (17082) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Riley Patterson (4243371) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matthew Wright (3128444) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lirim Hajrullahu (4682912) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eddy Pineiro (4034949) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Ammendola (3919602) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Seibert (3821683) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Naggar (4241822) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Blewitt (3045141) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Santoso (3040204) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Kessman (4046164) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dominik Eberle (3932960) 2021: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gardner Minshew (4038524) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Tannehill (14876) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Dalton (14012) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mac Jones (4241464) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Pickett (4240703) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarrett Stidham (3892775) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Wilson (4361259) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teddy Bridgewater (16728) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Baker Mayfield (3052587) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacoby Brissett (2578570) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jameis Winston (2969939) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Darnold (3912547) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Desmond Ridder (4239086) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Mills (4242546) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colt McCoy (13199) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Foles (14877) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Willis (4242512) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Ehlinger (4241820) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Love (4036378) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Skylar Thompson (4036419) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitch Trubisky (3039707) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Dobbs (3044720) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trace McSorley (3116172) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cooper Rush (2972515) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Case Keenum (15168) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Rypien (3722362) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Wolford (3124092) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- PJ Walker (3051308) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Blough (3116188) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bailey Zappe (4250360) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Howell (4426875) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryce Perkins (3675812) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Allen (2574511) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nathan Peterman (2972236) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Driskel (2574630) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Trask (4034946) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Henne (11291) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Daniel (12471) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hoyer (12477) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevor Siemian (2511109) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blaine Gabbert (13987) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Johnson (11394) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Beathard (2979520) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Webb (3052600) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nate Sudfeld (2979501) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kellen Mond (4240904) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Brown (4035312) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Streveler (3040206) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Easton Stick (3120590) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Logan Woodside (3042749) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zack Moss (4035676) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chuba Hubbard (4241416) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenyan Drake (2979843) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyren Williams (4430737) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hassan Haskins (4372071) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Williams (2980077) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenneth Gainwell (4371733) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaylen Warren (4569987) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Kelley (3910544) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marlon Mack (3139605) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dontrell Hilliard (3126246) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Caleb Huntley (4244732) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- JaMycal Hasty (3928925) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mark Ingram II (13981) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Breida (3049916) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Johnson (3915411) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ameer Abdullah (2576336) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sony Michel (3128721) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pierre Strong Jr. (4249836) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zamir White (4361777) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ronald Jones (3912550) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Royce Freeman (3122672) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Spiller (4426891) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tony Jones Jr. (4046676) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Davis (4240603) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Boston Scott (3051439) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keaontay Ingram (4362087) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justin Jackson (3116136) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeeJay Dallas (4240631) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrel Williams (3115375) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kevin Harris (4570674) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Damien Williams (17359) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Davis (3025433) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrion Davis-Price (4426475) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Benny Snell Jr. (4035072) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julius Chestnut (4367567) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Raheem Blackshear (4259308) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gary Brightwell (4245645) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trestan Ebner (4259169) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Montgomery (2577134) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Evans (4046530) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ke'Shawn Vaughn (3917612) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Craig Reynolds (4421446) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justice Hill (4038441) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ronnie Rivers (4243003) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Ernest Johnson (3139602) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Phillip Lindsay (3052117) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Myles Gaskin (3886818) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kene Nwangwu (4035537) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Bolden (15478) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrynton Evans (4036431) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Avery Williams (4048259) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tevin Coleman (2979477) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Clement (3045260) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Giovani Bernard (15826) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Snoop Conner (4567246) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Johnson (2508176) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dwayne Washington (3002265) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jerome Ford (4372019) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Sermon (4241401) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alec Ingold (3917668) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rico Dowdle (4038815) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derek Watt (2576450) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Chandler (4242431) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trayveon Williams (4035222) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Salvon Ahmed (4243315) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DJ Chark (3115394) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Russell Gage (3115378) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Duvernay (4039050) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mack Hollins (2991662) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Davis (3042778) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nico Collins (4258173) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeVante Parker (2576623) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Golladay (2974858) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demarcus Robinson (3043116) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Terrace Marshall Jr. (4362630) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- K.J. Osborn (3916566) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Dortch (4037235) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Hodgins (4242540) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeAndre Carter (2580216) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randall Cobb (14053) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Richie James (3122899) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashid Shaheed (4032473) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquise Goodwin (15839) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tutu Atwell (4360797) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Tolbert (4249417) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendall Hinton (3700815) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nelson Agholor (2971618) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Skowronek (4035656) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalif Raymond (2973405) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- A.J. Green (13983) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- T.Y. Hilton (14924) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Brown (3121409) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sammy Watkins (16725) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trent Sherfield (3122168) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamison Crowder (2576716) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quez Watkins (4050373) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Westbrook-Ikhine (3929785) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendrick Bourne (3045523) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedrick Wilson Jr. (4036335) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Braxton Berrios (3123075) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyquan Thornton (4362921) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cole Beasley (15349) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justin Watson (3118892) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeSean Jackson (11283) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jauan Jennings (3886598) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Laviska Shenault Jr. (4243160) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Velus Jones Jr. (4035693) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre'Quan Smith (3128451) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Callaway (4035170) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Olamide Zaccheaus (3917914) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamal Agnew (3061612) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Bell (4570409) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Amari Rodgers (4239992) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Phillip Dorsett (2579604) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Khalil Shakir (4373678) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ray-Ray McCloud III (3728262) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Powell (3115255) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Washington (3122449) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Steven Sims (3917960) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trenton Irwin (3931391) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dee Eskridge (4043016) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Equanimeous St. Brown (3932442) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Byron Pringle (4036416) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Montrell Washington (4248822) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- KaVontae Turpin (3676833) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Breshad Perriman (2972460) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Philips (4367175) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryan Edwards (4038818) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Reagor (4241802) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Shi Smith (4259499) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Gesicki (3116164) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Conklin (3915486) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Juwan Johnson (3929645) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Hooper (3043275) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Bellinger (4361516) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cade Otton (4243331) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey McBride (4361307) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Dissly (3127292) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jelani Woods (4241410) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Harrison Bryant (4040774) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonnu Smith (3054212) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cameron Brate (17453) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Rudolph (14054) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brevin Jordan (4362504) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Trautman (3911853) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Tremble (4372780) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Gray (4240472) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- O.J. Howard (3043080) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jack Stoll (4034862) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kylen Granson (4039160) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brock Wright (4242392) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Ferguson (4242355) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Shane Zylstra (4608362) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitchell Wilcox (3923392) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donald Parham Jr. (3912092) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dan Arnold (4212989) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Gentry (3929924) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Bates (4048228) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Saubert (2975863) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jody Fortson (4408854) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Connor Heyward (4241961) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josiah Deguara (3914151) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colby Parkinson (4242557) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Mitchell (4361988) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brycen Hopkins (3918003) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Oliver (3921690) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Peyton Hendershot (4258248) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quintin Morris (4244049) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Johnny Mundt (3052096) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Sweeney (3122818) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tanner Hudson (3050481) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Grant Calcaterra (4241374) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pharaoh Brown (2971281) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Ruckert (4361372) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MyCole Pruitt (2508256) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teagan Quitoriano (4374045) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Kroft (2582410) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geoff Swaim (3046704) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bell (2514206) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyree Jackson (3916564) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Armani Rogers (4056052) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Boyle (2574591) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Myarick (3138744) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lawrence Cager (3917849) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parker Hesse (3144991) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Long (4239944) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Tomlinson (2511973) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cole Turner (4361438) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Kolar (4241263) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Vannett (2576399) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony Firkser (3049698) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Maxx Williams (2970726) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Asiasi (4046522) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Manhertz (2531358) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jesper Horsted (3940587) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ko Kieft (4034779) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Feleipe Franks (4034948) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Farrell (4040612) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Davis (3914240) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Anderson (2576854) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Giovanni Ricci (3916749) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Ellefson (3930900) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cade York (4428963) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Sanders (3124679) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Badgley (3123052) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase McLaughlin (3150744) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eddy Pineiro (4034949) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Wil Lutz (2985659) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matthew Wright (3128444) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Crosby (10636) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dustin Hopkins (15965) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joey Slye (3124084) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ka'imi Fairbairn (2971573) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randy Bullock (15091) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Bertolet (2578718) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rodrigo Blankenship (3915165) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Seibert (3821683) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Ammendola (3919602) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tristan Vizcaino (3127313) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Lambo (2998120) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dominik Eberle (3932960) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Sciba (4362020) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Caleb Shudak (4036146) 2022: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Browning (3886812) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Levis (4361418) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Pickett (4240703) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryce Young (4685720) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Easton Stick (3120590) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy DeVito (4240391) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Wilson (4361259) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaren Hall (4373632) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Aidan O'Connell (4260394) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Heinicke (2565969) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarrett Stidham (3892775) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Desmond Ridder (4239086) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jimmy Garoppolo (16760) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mac Jones (4241464) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Rudolph (3116407) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bailey Zappe (4250360) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Lock (3924327) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Huntley (4035671) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ryan Tannehill (14876) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jameis Winston (2969939) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Darnold (3912547) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Beathard (2979520) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacoby Brissett (2578570) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyson Bagent (4434153) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitch Trubisky (3039707) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dorian Thompson-Robinson (4367178) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blaine Gabbert (13987) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Carson Wentz (2573079) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Case Keenum (15168) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevor Siemian (2511109) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Driskel (2574630) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brian Hoyer (12477) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Trask (4034946) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike White (3051381) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- PJ Walker (3051308) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teddy Bridgewater (16728) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Dalton (14012) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cooper Rush (2972515) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean Clifford (4259592) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Clayton Tune (4360175) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Mills (4242546) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Cunningham (4240069) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Willis (4242512) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nathan Peterman (2972236) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brett Rypien (3722362) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Barkley (15948) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Ehlinger (4241820) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- AJ McCarron (16810) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Logan Woodside (3042749) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justice Hill (4038441) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Mason (4360569) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rico Dowdle (4038815) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pierre Strong Jr. (4249836) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Damien Harris (3925347) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zach Evans (4685035) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Ernest Johnson (3139602) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendre Miller (4599739) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Craig Reynolds (4421446) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cordarrelle Patterson (15807) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Leonard Fournette (3115364) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Sermon (4241401) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Rodriguez Jr. (4362619) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Evan Hull (4569609) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keaontay Ingram (4362087) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deuce Vaughn (4431453) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Melvin Gordon III (2576434) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Taylor (4039358) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Salvon Ahmed (4243315) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ameer Abdullah (2576336) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Edmonds (3119195) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Carter (4240657) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trayveon Williams (4035222) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- La'Mical Perine (4034952) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeeJay Dallas (4240631) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kene Nwangwu (4035537) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Spiller (4426891) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kevin Harris (4570674) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ronnie Rivers (4243003) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Boone (3139033) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Raheem Blackshear (4259308) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Boston Scott (3051439) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zonovan Knight (4427728) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Johnson (3915411) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ke'Shawn Vaughn (3917612) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gary Brightwell (4245645) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tony Jones Jr. (4046676) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Israel Abanikanda (4429202) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Montgomery II (2577134) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Evans (4046530) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean Tucker (4430871) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenyan Drake (2979843) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alec Ingold (3917668) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijah Dotson (4248909) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Davis (4240603) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Gray (4570561) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darrynton Evans (4036431) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Myles Gaskin (3886818) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- JaMycal Hasty (3928925) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny McIntosh (4427391) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Goodson (4429676) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anthony McFarland Jr. (4241941) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Emanuel Wilson (4887558) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Robinson (4052042) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julius Chestnut (4367567) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Homer (4037457) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Brooks (3149687) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Corey Clement (3045260) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Bolden (15478) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrion Davis-Price (4426475) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quentin Johnston (4429025) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rondale Moore (4372485) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DJ Chark Jr. (3115394) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Gallup (4036348) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Treylon Burks (4567156) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Demarcus Robinson (3043116) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Mingo (4426485) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Lazard (3128390) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Wan'Dale Robinson (4569587) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Woods (15880) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Reynolds (3115306) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Valdes-Scantling (3051738) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Wilson (4360761) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darius Slayton (3916945) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Dortch (4037235) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dontayvion Wicks (4428850) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Khalil Shakir (4373678) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parris Campbell (3121410) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chase Claypool (4046692) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Renfrow (3135321) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeVante Parker (2576623) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalin Hyatt (4692590) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Van Jefferson (3930066) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alec Pierce (4360078) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parker Washington (4432620) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Guyton (3932430) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justin Watson (3118892) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julio Jones (13982) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedrick Wilson Jr. (4036335) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Powell (3115255) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donovan Peoples-Jones (4258195) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mecole Hardman (4035004) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trenton Irwin (3931391) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Allen Robinson II (16799) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Braxton Berrios (3123075) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Palmer (4426407) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Hodgins (4242540) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyquan Thornton (4362921) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Metchie III (4567096) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Calvin Austin III (4243389) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedric Tillman (4369863) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jauan Jennings (3886598) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalif Raymond (2973405) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marvin Jones Jr. (15072) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- A.T. Perry (4362019) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nelson Agholor (2971618) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamal Agnew (3061612) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Xavier Gipson (4427278) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Westbrook-Ikhine (3929785) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justyn Ross (4360306) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mack Hollins (2991662) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bo Melton (4259305) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randall Cobb (14053) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- KaVontae Turpin (3676833) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Bobo (4360405) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Johnson (4035198) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quez Watkins (4050373) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Terrace Marshall Jr. (4362630) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Tolbert (4249417) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deonte Harty (4411193) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derius Davis (4362477) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Xavier Hutchinson (4686422) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deven Thompkins (4374187) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ronnie Bell (4372063) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre Tucker (4428718) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sterling Shepard (2976592) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Richie James (3122899) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ray-Ray McCloud III (3728262) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andrei Iosivas (4368003) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Olamide Zaccheaus (3917914) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah McKenzie (3128724) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Reagor (4241802) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Heath (4689334) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Scott (4565908) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Duvernay (4039050) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alex Erickson (2977800) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kayshon Boutte (4429022) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gerald Everett (3918639) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Juwan Johnson (3929645) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tucker Kraft (4572680) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Johnny Mundt (3052096) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dawson Knox (3930086) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Dulcich (4367209) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tanner Hudson (3050481) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Gesicki (3116164) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Irv Smith Jr. (4040980) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hayden Hurst (3924365) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Donald Parham Jr. (3912092) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Fant (4036131) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Gray (4240472) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Bellinger (4361516) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kylen Granson (4039160) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Connor Heyward (4241961) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Hooper (3043275) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Trautman (3911853) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Schoonmaker (4372096) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Oliver (3921690) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darnell Washington (4430802) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Harrison Bryant (4040774) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jimmy Graham (13232) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Tremble (4372780) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Ruckert (4361372) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Tonyan (2975674) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jack Stoll (4034862) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Dissly (3127292) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brock Wright (4242392) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Allen (4426553) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Bell (2514206) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colby Parkinson (4242557) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Peyton Hendershot (4258248) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Albert Okwuegbunam (4035115) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Kolar (4241263) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Ogletree (4722908) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Bates (4048228) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brenton Strange (4430539) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Grant Calcaterra (4241374) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josiah Deguara (3914151) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Kroft (2582410) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lucas Krull (4360231) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stephen Sullivan (4035426) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julian Hill (4365395) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pharaoh Brown (2971281) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cole Turner (4361438) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- James Mitchell (4361988) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quintin Morris (4244049) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijah Higgins (4426844) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Farrell (4040612) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brycen Hopkins (3918003) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zack Kuntz (4361417) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Woerner (4035020) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre' McKitty (4240023) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teagan Quitoriano (4374045) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Mallory (4362523) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stone Smartt (4250764) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitchell Wilcox (3923392) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Manhertz (2531358) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ko Kieft (4034779) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Long (4239944) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Whyle (4360086) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Sims (4373030) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trevon Wesco (4039253) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lawrence Cager (3917849) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MyCole Pruitt (2508256) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brayden Willis (4360290) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Payne Durham (4372505) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nate Adkins (4383440) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Geoff Swaim (3046704) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John FitzPatrick (4379401) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Yeboah (4044144) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Saubert (2975863) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Folk (10621) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cairo Santos (17427) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Boswell (17372) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eddy Pineiro (4034949) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anders Carlson (4242519) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lucas Havrisik (4245661) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Badgley (3123052) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Joseph (3975763) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Ammendola (3919602) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joey Slye (3124084) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Ryland (4363538) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Crosby (10636) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Randy Bullock (15091) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Austin Seibert (3821683) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matthew Wright (3128444) 2023: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drake Maye (4431452) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bryce Young (4685720) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Penix Jr. (4360423) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Flacco (11252) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deshaun Watson (3122840) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cooper Rush (2972515) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Jones (3917792) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Rudolph (3116407) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mac Jones (4241464) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy DeVito (4240391) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Aidan O'Connell (4260394) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Huntley (4035671) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Dobbs (3044720) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Pickett (4240703) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Lock (3924327) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Carson Wentz (2573079) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gardner Minshew (4038524) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandon Allen (2574511) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andy Dalton (14012) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Spencer Rattler (4426339) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dorian Thompson-Robinson (4367178) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Desmond Ridder (4239086) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Willis (4242512) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tanner McKee (4685201) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jacoby Brissett (2578570) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mitchell Trubisky (3039707) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Lance (4383351) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hendon Hooker (4240858) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcus Mariota (2576980) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jimmy Garoppolo (16760) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Teddy Bridgewater (16728) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sam Howell (4426875) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrod Taylor (14163) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyson Bagent (4434153) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Browning (3886812) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joe Milton III (4360698) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Haener (4243322) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Johnson (11394) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Mullens (3059989) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Skylar Thompson (4036419) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Mills (4242546) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bailey Zappe (4250360) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jarrett Stidham (3892775) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Trask (4034946) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Taylor Heinicke (2565969) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Allen (3115293) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Clayton Tune (4360175) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Boyle (3045169) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike White (3051381) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Driskel (2574630) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Oladokun (4044111) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Carter (4240657) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justice Hill (4038441) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaleel McLaughlin (4722893) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Benson (4429275) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Chandler (4242431) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kimani Vidal (4430968) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Clyde Edwards-Helaire (4242214) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Audric Estime (4569682) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenneth Gainwell (4371733) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Khalil Herbert (4035886) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MarShawn Lloyd (4429023) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Raheem Blackshear (4259308) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Miles Sanders (4045163) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Samaje Perine (3116389) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy McNichols (3127586) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Isaiah Davis (4695404) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mike Boone (3139033) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamaal Williams (2980453) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Craig Reynolds (4421446) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ty Johnson (3915411) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Emanuel Wilson (4887558) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dameon Pierce (4360238) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Onta Foreman (3125116) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- D'Ernest Johnson (3139602) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Keaton Mitchell (4596334) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sean Tucker (4430871) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kyle Juszczyk (16002) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny McIntosh (4427391) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Goodson (4429676) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Travis Homer (4037457) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Mims (4243004) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cordarrelle Patterson (15807) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Shipley (4431545) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dalvin Cook (3116593) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dare Ogunbowale (2983509) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Gray (4570561) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trayveon Williams (4035222) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julius Chestnut (4367567) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Rodriguez Jr. (4362619) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dylan Laube (4366963) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hassan Haskins (4372071) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Emari Demercado (4362478) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Deuce Vaughn (4431453) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeeJay Dallas (4240631) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Brooks (3149687) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Sione Vaki (4912274) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pierre Strong Jr. (4249836) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- JaMycal Hasty (3928925) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Scott Matlock (4373684) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeff Wilson Jr. (3122976) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Luepke (4383396) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Ham (4012556) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ronnie Rivers (4243003) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ke'Shawn Vaughn (3917612) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Alec Ingold (3917668) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rasheen Ali (4690013) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jermar Jefferson (4374033) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Patrick Ricard (2975417) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jase McClellan (4429001) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Avery Williams (4048259) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Velus Jones Jr. (4035693) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Badie (4362748) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyrion Davis-Price (4426475) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Burton (2515270) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cody Schrader (4391845) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kene Nwangwu (4035537) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Evan Hull (4569609) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- J.J. Taylor (4039607) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Westbrook-Ikhine (3929785) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DeMario Douglas (4427095) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Rashod Bateman (4360939) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marquez Valdes-Scantling (3051738) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijah Moore (4372414) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brandin Cooks (16731) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ray-Ray McCloud III (3728262) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Wilson (4360761) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Coker (4695883) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tre Tucker (4428718) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kayshon Boutte (4429022) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adonai Mitchell (4597500) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darius Slayton (3916945) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ja'Lynn Polk (4430637) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Brown (3121409) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tim Patrick (3134353) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Calvin Austin III (4243389) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parker Washington (4432620) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Andrei Iosivas (4368003) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devaughn Vele (4569559) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Boyd (3045144) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kendrick Bourne (3045523) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jahan Dotson (4361409) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Odell Beckham Jr. (16733) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalin Hyatt (4692590) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- KaVontae Turpin (3676833) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke McCaffrey (4426948) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Whittington (4569382) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- DJ Chark Jr. (3115394) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Trey Palmer (4426407) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Troy Franklin (4431280) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jalen Nailor (4382466) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- David Moore (4212909) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malik Washington (4569603) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Johnson (2310331) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Reynolds (3115306) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kalif Raymond (2973405) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jonathan Mingo (4426485) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mason Tipton (4573697) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Metchie III (4567096) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mack Hollins (2991662) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zay Jones (3059722) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jermaine Burton (4429033) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Van Jefferson (3930066) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nelson Agholor (2971618) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Justin Watson (3118892) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Malachi Corley (4613104) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Derius Davis (4362477) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lil'Jordan Humphrey (4039057) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Roman Wilson (4431492) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dyami Brown (4361577) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mecole Hardman (4035004) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kadarius Toney (4240600) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Xavier Gipson (4427278) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Bobo (4360405) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cedrick Wilson Jr. (4036335) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kevin Austin Jr. (4372758) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bo Melton (4259305) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Xavier Hutchinson (4686422) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Bub Means (4427985) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Johnny Wilson (4686104) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Duvernay (4039050) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Robert Woods (15880) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Braxton Berrios (3123075) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Javon Baker (4692022) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jamison Crowder (2576716) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- K.J. Osborn (3916566) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Skyy Moore (4430191) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tylan Wallace (4241424) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brenton Strange (4430539) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Gray (4240472) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Noah Fant (4036131) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dawson Knox (3930086) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colby Parkinson (4242557) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Schoonmaker (4372096) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Payne Durham (4372505) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Michael Mayer (4429086) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Foster Moreau (3843945) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Stone Smartt (4250764) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Grant Calcaterra (4241374) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Musgrave (4428085) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hayden Hurst (3924365) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jordan Akins (3128452) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- AJ Barner (4576297) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Sinnott (4690923) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ja'Tavion Sanders (4431588) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brock Wright (4242392) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Johnny Mundt (3052096) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tyler Higbee (2573401) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Erick All Jr. (4427834) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Oliver (3921690) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Darnell Washington (4430802) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Gerald Everett (3918639) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tommy Tremble (4372780) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Dulcich (4367209) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Bellinger (4361516) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eric Saubert (2975863) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Davis Allen (4426553) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cade Stover (4426496) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kylen Granson (4039160) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tanner Hudson (3050481) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Adam Trautman (3911853) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Lucas Krull (4360231) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jeremy Ruckert (4361372) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Mo Alie-Cox (2998565) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Connor Heyward (4241961) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Elijah Higgins (4426844) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Durham Smythe (3052897) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Quintin Morris (4244049) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Sample (3127310) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ben Sims (4373030) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Peyton Hendershot (4258248) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Marcedes Lewis (9614) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Kolar (4241263) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Pharaoh Brown (2971281) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Charlie Woerner (4035020) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Julian Hill (4365395) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jared Wiley (4430723) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Josh Whyle (4360086) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brevin Jordan (4362504) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Harrison Bryant (4040774) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Drew Ogletree (4722908) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Bates (4048228) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chris Manhertz (2531358) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tucker Fisk (4242558) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jaheim Bell (4429262) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brevyn Spann-Ford (4360967) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ian Thomas (4045305) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Luke Farrell (4040612) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Tip Reiman (4696700) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nate Adkins (4383440) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ko Kieft (4034779) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Colson Yankoff (4361088) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Ross Dwelley (3120303) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Hunter Long (4239944) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Shane Zylstra (4608362) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- E.J. Jenkins (4248557) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- MyCole Pruitt (2508256) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Devin Culp (4361112) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Feleipe Franks (4034948) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Vannett (2576399) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Parker Hesse (3144991) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Kenny Yeboah (4044144) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Irv Smith Jr. (4040980) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- C.J. Uzomah (2574576) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jake Tonges (4259147) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brady Russell (4243176) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Whiteheart (4362018) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zack Kuntz (4361417) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Will Reichard (4567104) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Nick Folk (10621) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jason Myers (2473037) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Gay (4249087) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Blake Grupe (4259619) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joshua Karty (4566192) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matthew Wright (3128444) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Chad Ryland (4363538) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Dustin Hopkins (15965) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Zane Gonzalez (3043234) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Spencer Shrader (4571557) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cade York (4428963) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Daniel Carlson (3051909) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- John Parker Romo (4051167) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Eddy Pineiro (4034949) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Cam Little (4686361) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Matt Prater (11122) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Joey Slye (3124084) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Anders Carlson (4242519) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Riley Patterson (4243371) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Graham Gano (12460) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Brayden Narveson (4361765) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Greg Joseph (3975763) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
+- Jude McAtamney (5092436) 2024: gamelog had no regular-season weeks that matched existing weekly_stats keys
 
 ## Skipped (non-athlete or invalid ID)
 - None
