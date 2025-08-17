@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 
-INPUT_PARQUET = "data/fantasy_weekly_stats.parquet"
+INPUT_PARQUET = "data/fantasy_weekly_stats_complete.parquet"
 OUT_CSV = "data/defense_weekly_stats.csv"
 OUT_PARQUET = "data/defense_weekly_stats.parquet"
 
@@ -82,12 +82,18 @@ def aggregate_pos(df: pd.DataFrame, pos: str, keys: list, group_cols: list) -> p
 
 def main():
     df = pd.read_parquet(INPUT_PARQUET)
-    # We expect columns: year, week, opponent (defense team key), position, player_team (offense team), plus stat columns
-    if not {'year', 'week', 'opponent', 'position', 'player_team'}.issubset(df.columns):
-        raise RuntimeError("Input parquet missing required columns: year, week, opponent, position, player_team")
+    # We expect columns: year, week, nfl_opponent (defense team key), position, nfl_team (offense team), isHome, plus stat columns
+    if not {'year', 'week', 'nfl_opponent', 'position', 'nfl_team', 'isHome'}.issubset(df.columns):
+        raise RuntimeError("Input parquet missing required columns: year, week, nfl_opponent, position, nfl_team, isHome")
 
-    # Group columns for defense records - now including offense team
-    group_cols = ['year', 'week', 'opponent', 'player_team']
+    # Filter out rows with missing team information
+    print(f"Original dataset: {len(df)} rows")
+    df = df.dropna(subset=['nfl_team', 'nfl_opponent'])
+    df = df[(df['nfl_team'] != '') & (df['nfl_opponent'] != '')]
+    print(f"After filtering empty teams: {len(df)} rows")
+
+    # Group columns for defense records - now including offense team and home/away
+    group_cols = ['year', 'week', 'nfl_opponent', 'nfl_team', 'isHome']
 
     # Receiving: RB/WR/TE
     recv_rb = aggregate_pos(df, 'RB', RECEIVING_KEYS, group_cols)
@@ -114,10 +120,10 @@ def main():
             out = out.merge(part, on=group_cols, how='left')
 
     # Rename columns for clarity
-    out = out.rename(columns={'opponent': 'defense_team', 'player_team': 'offense_team'})
+    out = out.rename(columns={'nfl_opponent': 'defense_team', 'nfl_team': 'offense_team'})
 
     # Sort and save
-    out = out.sort_values(['year', 'week', 'defense_team', 'offense_team']).reset_index(drop=True)
+    out = out.sort_values(['year', 'week', 'defense_team', 'offense_team', 'isHome']).reset_index(drop=True)
     os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
     out.to_csv(OUT_CSV, index=False)
     out.to_parquet(OUT_PARQUET, index=False)

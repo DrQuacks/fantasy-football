@@ -1,12 +1,12 @@
 # Complete Database Build Report
 
-Generated: 2025-08-16 18:20:09
+Generated: 2025-08-16 21:30:45
 
 ## Summary
 
-- **Total players processed**: 3726
+- **Total players processed**: 6662
 - **Rostered players**: 1487
-- **Free agents**: 2239
+- **Free agents**: 5175
 - **Years processed**: 2019-2024
 - **Test results**: 4/4 passed
 

@@ -40,8 +40,8 @@ STAT_COLS = [
 ]
 
 # If True, offense baseline excludes the current game (safer to avoid leakage).
-# You asked to use full season; leaving this False matches that.
-EXCLUDE_CURRENT_GAME = False
+# This should be True to avoid data leakage in PI calculations.
+EXCLUDE_CURRENT_GAME = True
 
 EPS = 1e-6  # numerical stability for divides
 
@@ -75,6 +75,47 @@ def offense_full_season_baseline(df: pd.DataFrame, stat_cols):
     base = base.set_index(["year", "offense_team"])
     base.columns = [f"expected_{c}" for c in base.columns]
     return base
+
+
+def offense_leave_one_out_baseline(df: pd.DataFrame, stat_cols):
+    """
+    Compute leave-one-out baseline for each game, excluding the current game from the baseline.
+    This prevents data leakage in PI calculations.
+    """
+    print("🔄 Computing leave-one-out offensive baselines...")
+    
+    # Create a copy to avoid modifying original
+    df_copy = df.copy()
+    
+    # Initialize expected columns
+    for c in stat_cols:
+        df_copy[f"expected_{c}"] = np.nan
+    
+    # For each game, calculate baseline excluding that specific game
+    total_games = len(df_copy)
+    for idx, row in df_copy.iterrows():
+        if idx % 100 == 0:
+            print(f"   Processing game {idx+1}/{total_games}")
+        
+        year = row['year']
+        offense_team = row['offense_team']
+        week = row['week']
+        
+        # Get all other games for this offense team in this year (excluding current game)
+        other_games = df_copy[
+            (df_copy['year'] == year) & 
+            (df_copy['offense_team'] == offense_team) & 
+            ~((df_copy['year'] == year) & (df_copy['offense_team'] == offense_team) & (df_copy['week'] == week))
+        ]
+        
+        if not other_games.empty:
+            # Calculate mean for each stat column
+            for c in stat_cols:
+                mean_val = other_games[c].mean()
+                df_copy.at[idx, f"expected_{c}"] = mean_val
+    
+    print("✅ Leave-one-out baselines computed!")
+    return df_copy
 
 
 def attach_expected(df: pd.DataFrame, base: pd.DataFrame) -> pd.DataFrame:
@@ -122,6 +163,7 @@ def per_game_pi(df: pd.DataFrame, stat_cols):
 def last_k_weeks(df: pd.DataFrame, k: int, stat_cols):
     """
     For each (year, defense_team), take its last k games and average the PI stats.
+    Also create separate home and away versions.
     """
     # Rank games per defense by week to pick most recent k
     df = df.copy()
@@ -129,6 +171,8 @@ def last_k_weeks(df: pd.DataFrame, k: int, stat_cols):
     df_k = df[df["week_rank_desc"] <= k]
 
     pi_cols = [f"pi_{c}" for c in stat_cols]
+    
+    # Overall average (all games)
     agg = (
         df_k.groupby(["year", "defense_team"], as_index=False)[pi_cols]
             .mean(numeric_only=True)
@@ -136,12 +180,36 @@ def last_k_weeks(df: pd.DataFrame, k: int, stat_cols):
     # Rename columns to include window suffix
     rename_map = {col: col.replace("pi_", f"pi_last{k}_") for col in pi_cols}
     agg = agg.rename(columns=rename_map)
+    
+    # Home games only
+    df_home = df_k[df_k["isHome"] == True]
+    if not df_home.empty:
+        agg_home = (
+            df_home.groupby(["year", "defense_team"], as_index=False)[pi_cols]
+                .mean(numeric_only=True)
+        )
+        rename_map_home = {col: col.replace("pi_", f"pi_last{k}_home_") for col in pi_cols}
+        agg_home = agg_home.rename(columns=rename_map_home)
+        agg = agg.merge(agg_home, on=["year", "defense_team"], how="left")
+    
+    # Away games only
+    df_away = df_k[df_k["isHome"] == False]
+    if not df_away.empty:
+        agg_away = (
+            df_away.groupby(["year", "defense_team"], as_index=False)[pi_cols]
+                .mean(numeric_only=True)
+        )
+        rename_map_away = {col: col.replace("pi_", f"pi_last{k}_away_") for col in pi_cols}
+        agg_away = agg_away.rename(columns=rename_map_away)
+        agg = agg.merge(agg_away, on=["year", "defense_team"], how="left")
+    
     return agg
 
 
 def last_week(df: pd.DataFrame, stat_cols):
     """
     For each (year, defense_team), take only the most recent week and keep PI stats.
+    Also create separate home and away versions.
     """
     df = df.copy()
     # Find last week per defense/year
@@ -149,25 +217,70 @@ def last_week(df: pd.DataFrame, stat_cols):
     df_last = df.merge(last_weeks, on=["year", "defense_team", "week"], how="inner")
 
     pi_cols = [f"pi_{c}" for c in stat_cols]
-    keep = ["year", "defense_team"] + pi_cols
+    keep = ["year", "defense_team", "isHome"] + pi_cols
     df_last = df_last[keep]
 
+    # Overall (most recent game regardless of home/away)
+    df_overall = df_last.groupby(["year", "defense_team"], as_index=False)[pi_cols].mean(numeric_only=True)
     rename_map = {col: col.replace("pi_", "pi_last1_") for col in pi_cols}
-    df_last = df_last.rename(columns=rename_map)
-    return df_last
+    df_overall = df_overall.rename(columns=rename_map)
+    
+    # Home games only
+    df_home = df_last[df_last["isHome"] == True]
+    if not df_home.empty:
+        df_home_agg = df_home.groupby(["year", "defense_team"], as_index=False)[pi_cols].mean(numeric_only=True)
+        rename_map_home = {col: col.replace("pi_", "pi_last1_home_") for col in pi_cols}
+        df_home_agg = df_home_agg.rename(columns=rename_map_home)
+        df_overall = df_overall.merge(df_home_agg, on=["year", "defense_team"], how="left")
+    
+    # Away games only
+    df_away = df_last[df_last["isHome"] == False]
+    if not df_away.empty:
+        df_away_agg = df_away.groupby(["year", "defense_team"], as_index=False)[pi_cols].mean(numeric_only=True)
+        rename_map_away = {col: col.replace("pi_", "pi_last1_away_") for col in pi_cols}
+        df_away_agg = df_away_agg.rename(columns=rename_map_away)
+        df_overall = df_overall.merge(df_away_agg, on=["year", "defense_team"], how="left")
+    
+    return df_overall
 
 
 def season_to_date(df: pd.DataFrame, stat_cols):
     """
     Average PI over all games (to date) per (year, defense_team).
+    Also create separate home and away versions.
     """
     pi_cols = [f"pi_{c}" for c in stat_cols]
+    
+    # Overall average (all games)
     agg = (
         df.groupby(["year", "defense_team"], as_index=False)[pi_cols]
           .mean(numeric_only=True)
     )
     rename_map = {col: col.replace("pi_", "pi_season_") for col in pi_cols}
     agg = agg.rename(columns=rename_map)
+    
+    # Home games only
+    df_home = df[df["isHome"] == True]
+    if not df_home.empty:
+        agg_home = (
+            df_home.groupby(["year", "defense_team"], as_index=False)[pi_cols]
+              .mean(numeric_only=True)
+        )
+        rename_map_home = {col: col.replace("pi_", "pi_season_home_") for col in pi_cols}
+        agg_home = agg_home.rename(columns=rename_map_home)
+        agg = agg.merge(agg_home, on=["year", "defense_team"], how="left")
+    
+    # Away games only
+    df_away = df[df["isHome"] == False]
+    if not df_away.empty:
+        agg_away = (
+            df_away.groupby(["year", "defense_team"], as_index=False)[pi_cols]
+              .mean(numeric_only=True)
+        )
+        rename_map_away = {col: col.replace("pi_", "pi_season_away_") for col in pi_cols}
+        agg_away = agg_away.rename(columns=rename_map_away)
+        agg = agg.merge(agg_away, on=["year", "defense_team"], how="left")
+    
     return agg
 
 
@@ -189,15 +302,16 @@ def main():
     # Optional: If you want "season to date" rather than full final-season,
     # you could filter df by week <= current_week per year. Here we keep all.
 
-    # Build offense full-season baselines
+    # Build offense baselines
     if EXCLUDE_CURRENT_GAME:
         # Leave-one-out baseline: compute offense mean excluding each game
-        # (More expensive; shown for completeness)
-        # For now we'll stick to full-season mean (your request).
-        pass
-
-    base = offense_full_season_baseline(df, STAT_COLS)
-    df = attach_expected(df, base)
+        # This prevents data leakage in PI calculations
+        df = offense_leave_one_out_baseline(df, STAT_COLS)
+    else:
+        # Full-season baseline (includes current game - may cause data leakage)
+        base = offense_full_season_baseline(df, STAT_COLS)
+        df = attach_expected(df, base)
+    
     df = per_game_pi(df, STAT_COLS)
 
     # Windows

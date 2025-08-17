@@ -105,7 +105,8 @@ def fetch_free_agents(league: League, year: int) -> Set[int]:
     
     for position in tqdm(POSITIONS, desc=f"Finding free agents in {year}"):
         try:
-            free_agents = league.free_agents(size=100, position=position)
+            # Fetch a much larger number of free agents to capture all players
+            free_agents = league.free_agents(size=800, position=position)
             for player in free_agents:
                 all_player_ids.add(player.playerId)
         except Exception as e:
