@@ -101,12 +101,29 @@ def offense_leave_one_out_baseline(df: pd.DataFrame, stat_cols):
         offense_team = row['offense_team']
         week = row['week']
         
+        # DEBUG: Check for Arizona vs Seattle Week 16, 2019
+        if (row['defense_team'] == 'ARI' and offense_team == 'SEA' and year == 2019 and week == 16):
+            print(f"\n🔍 DEBUG: Found target game at index {idx}")
+            print(f"   Defense: {row['defense_team']}, Offense: {offense_team}, Year: {year}, Week: {week}")
+        
         # Get all other games for this offense team in this year (excluding current game)
         other_games = df_copy[
             (df_copy['year'] == year) & 
             (df_copy['offense_team'] == offense_team) & 
             ~((df_copy['year'] == year) & (df_copy['offense_team'] == offense_team) & (df_copy['week'] == week))
         ]
+        
+        # DEBUG: Show baseline calculation for target game
+        if (row['defense_team'] == 'ARI' and offense_team == 'SEA' and year == 2019 and week == 16):
+            print(f"   Other games for {offense_team} {year} (excluding week {week}):")
+            print(f"   Found {len(other_games)} other games")
+            if not other_games.empty:
+                print(f"   Other games weeks: {other_games['week'].tolist()}")
+                for c in stat_cols:
+                    if c == 'receivingYardsWR':  # Focus on the key stat
+                        mean_val = other_games[c].mean()
+                        print(f"   Baseline for {c}: {mean_val}")
+                        print(f"   Individual values: {other_games[c].tolist()}")
         
         if not other_games.empty:
             # Calculate mean for each stat column
@@ -136,6 +153,8 @@ def per_game_pi(df: pd.DataFrame, stat_cols):
     For each row/game and stat, compute PI = (Expected - Actual) / Expected.
     If Expected == 0: PI = 0 if Actual == 0 else -1
     """
+    print("🔄 Computing per-game PI values...")
+    
     for c in stat_cols:
         exp_col = f"expected_{c}"
         pi_col = f"pi_{c}"
@@ -156,6 +175,16 @@ def per_game_pi(df: pd.DataFrame, stat_cols):
             pi
         )
         df[pi_col] = pi
+        
+        # DEBUG: Check for Arizona vs Seattle Week 16, 2019
+        target_mask = (df['defense_team'] == 'ARI') & (df['offense_team'] == 'SEA') & (df['year'] == 2019) & (df['week'] == 16)
+        if target_mask.any() and c == 'receivingYardsWR':
+            target_idx = target_mask.idxmax()
+            print(f"\n🔍 DEBUG: PI calculation for {c} - Arizona vs Seattle Week 16, 2019:")
+            print(f"   Expected: {exp[target_idx]}")
+            print(f"   Actual: {act[target_idx]}")
+            print(f"   PI: {pi[target_idx]}")
+            print(f"   Formula: ({exp[target_idx]} - {act[target_idx]}) / ({exp[target_idx]} + {EPS})")
 
     return df
 
@@ -250,6 +279,15 @@ def season_to_date(df: pd.DataFrame, stat_cols):
     Also create separate home and away versions.
     """
     pi_cols = [f"pi_{c}" for c in stat_cols]
+    
+    # DEBUG: Check Arizona 2019 data before aggregation
+    ari_2019 = df[(df['defense_team'] == 'ARI') & (df['year'] == 2019)]
+    if not ari_2019.empty:
+        print(f"\n🔍 DEBUG: Arizona 2019 games before season aggregation:")
+        print(f"   Total games: {len(ari_2019)}")
+        if 'pi_receivingYardsWR' in ari_2019.columns:
+            print(f"   PI values for receivingYardsWR: {ari_2019['pi_receivingYardsWR'].tolist()}")
+            print(f"   Mean PI: {ari_2019['pi_receivingYardsWR'].mean()}")
     
     # Overall average (all games)
     agg = (
