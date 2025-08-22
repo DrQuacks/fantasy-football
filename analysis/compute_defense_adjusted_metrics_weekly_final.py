@@ -192,12 +192,21 @@ def calculate_weekly_defense_metrics(df: pd.DataFrame, stat_cols):
                 result_row[f"pi_season_home_{c}"] = 0.0
                 result_row[f"pi_season_away_{c}"] = 0.0
         else:
-            # Get all games for this defense team up to the current week (excluding current week)
-            historical_games = df[
+            # Get current season games before current week
+            current_season_games = df[
                 (df['year'] == year) & 
                 (df['defense_team'] == defense_team) & 
                 (df['week'] < current_week)
-            ].sort_values('week', ascending=False)
+            ]
+            
+            # Get previous season games (for filling out home/away splits)
+            prev_season_games = df[
+                (df['year'] == year - 1) & 
+                (df['defense_team'] == defense_team)
+            ]
+            
+            # Combine them, prioritizing current season games
+            historical_games = pd.concat([current_season_games, prev_season_games]).sort_values('week', ascending=False)
             
             # If no historical games, handle based on year and week
             if historical_games.empty:
@@ -308,13 +317,14 @@ def calculate_weekly_defense_metrics(df: pd.DataFrame, stat_cols):
                     game_week = game['week']
                     
                     # Calculate expected values for this specific game
-                    if game_week == 1 and year > 2019:
-                        # Week 1 (non-2019): Use last season's data
-                        last_year = year - 1
-                        last_year_data = df[(df['year'] == last_year) & (df['offense_team'] == offense_team)]
-                        if not last_year_data.empty:
+                    game_year = game['year']
+                    
+                    if game_year == year - 1:
+                        # Previous season game: Use previous season's data for expected
+                        prev_year_data = df[(df['year'] == year - 1) & (df['offense_team'] == offense_team)]
+                        if not prev_year_data.empty:
                             for c in stat_cols:
-                                expected = last_year_data[c].mean()
+                                expected = prev_year_data[c].mean()
                                 actual = game[c]
                                 if abs(expected) < EPS:
                                     pi_val = 0.0 if abs(actual) < EPS else -1.0
@@ -322,11 +332,11 @@ def calculate_weekly_defense_metrics(df: pd.DataFrame, stat_cols):
                                     pi_val = (expected - actual) / expected
                                 game_pi[c] = pi_val
                         else:
-                            # No last year data, set PI to 0
+                            # No previous year data, set PI to 0
                             for c in stat_cols:
                                 game_pi[c] = 0.0
                     else:
-                        # Week 2+: Use leave-one-out baseline within current season
+                        # Current season game: Use leave-one-out baseline within current season
                         other_games = df[(df['year'] == year) & 
                                        (df['offense_team'] == offense_team) & 
                                        (df['week'] != game_week)]
@@ -340,59 +350,73 @@ def calculate_weekly_defense_metrics(df: pd.DataFrame, stat_cols):
                                     pi_val = (expected - actual) / expected
                                 game_pi[c] = pi_val
                         else:
-                            # No other games, set PI to 0
-                            for c in stat_cols:
-                                game_pi[c] = 0.0
+                            # No other games in current season, use previous season data
+                            prev_year_data = df[(df['year'] == year - 1) & (df['offense_team'] == offense_team)]
+                            if not prev_year_data.empty:
+                                for c in stat_cols:
+                                    expected = prev_year_data[c].mean()
+                                    actual = game[c]
+                                    if abs(expected) < EPS:
+                                        pi_val = 0.0 if abs(actual) < EPS else -1.0
+                                    else:
+                                        pi_val = (expected - actual) / expected
+                                    game_pi[c] = pi_val
+                            else:
+                                # No previous year data either, set PI to 0
+                                for c in stat_cols:
+                                    game_pi[c] = 0.0
                     
                     game_pi['isHome'] = game['isHome']
                     historical_pi_values.append(game_pi)
                 
-                # Calculate last1 metrics (most recent game)
+                # Calculate metrics for different time windows
                 if historical_pi_values:
+                    # Last1: Most recent game
                     last_game_pi = historical_pi_values[0]
                     for c in stat_cols:
                         result_row[f"pi_last1_{c}"] = last_game_pi[c]
                     
-                    # Last1 home/away
-                    last_home_pi = [pi for pi in historical_pi_values if pi['isHome'] == True]
-                    last_away_pi = [pi for pi in historical_pi_values if pi['isHome'] == False]
-                    
+                    # Last4: Last 4 games
+                    last4_pi_values = historical_pi_values[:4]
                     for c in stat_cols:
-                        result_row[f"pi_last1_home_{c}"] = last_home_pi[0][c] if last_home_pi else 0.0
-                        result_row[f"pi_last1_away_{c}"] = last_away_pi[0][c] if last_away_pi else 0.0
+                        result_row[f"pi_last4_{c}"] = np.mean([pi[c] for pi in last4_pi_values])
+                    
+                    # Season: All games
+                    for c in stat_cols:
+                        result_row[f"pi_season_{c}"] = np.mean([pi[c] for pi in historical_pi_values])
+                    
+                    # Home/Away splits - filter by home/away FIRST, then get appropriate games
+                    home_pi_values = [pi for pi in historical_pi_values if pi['isHome'] == True]
+                    away_pi_values = [pi for pi in historical_pi_values if pi['isHome'] == False]
+                    
+                    # Last1 home/away
+                    for c in stat_cols:
+                        result_row[f"pi_last1_home_{c}"] = home_pi_values[0][c] if home_pi_values else 0.0
+                        result_row[f"pi_last1_away_{c}"] = away_pi_values[0][c] if away_pi_values else 0.0
+                    
+                    # Last4 home/away
+                    last4_home_pi = home_pi_values[:4]
+                    last4_away_pi = away_pi_values[:4]
+                    for c in stat_cols:
+                        result_row[f"pi_last4_home_{c}"] = np.mean([pi[c] for pi in last4_home_pi]) if last4_home_pi else 0.0
+                        result_row[f"pi_last4_away_{c}"] = np.mean([pi[c] for pi in last4_away_pi]) if last4_away_pi else 0.0
+                    
+                    # Season home/away
+                    for c in stat_cols:
+                        result_row[f"pi_season_home_{c}"] = np.mean([pi[c] for pi in home_pi_values]) if home_pi_values else 0.0
+                        result_row[f"pi_season_away_{c}"] = np.mean([pi[c] for pi in away_pi_values]) if away_pi_values else 0.0
                 else:
                     # No historical games, set all to 0
                     for c in stat_cols:
                         result_row[f"pi_last1_{c}"] = 0.0
+                        result_row[f"pi_last4_{c}"] = 0.0
+                        result_row[f"pi_season_{c}"] = 0.0
                         result_row[f"pi_last1_home_{c}"] = 0.0
                         result_row[f"pi_last1_away_{c}"] = 0.0
-                
-                # Calculate last4 metrics (last 4 games)
-                last4_pi_values = historical_pi_values[:4]
-                if last4_pi_values:
-                    for c in stat_cols:
-                        result_row[f"pi_last4_{c}"] = np.mean([pi[c] for pi in last4_pi_values])
-                    
-                    # Last4 home/away
-                    last4_home_pi = [pi for pi in last4_pi_values if pi['isHome'] == True]
-                    last4_away_pi = [pi for pi in last4_pi_values if pi['isHome'] == False]
-                    
-                    for c in stat_cols:
-                        result_row[f"pi_last4_home_{c}"] = np.mean([pi[c] for pi in last4_home_pi]) if last4_home_pi else 0.0
-                        result_row[f"pi_last4_away_{c}"] = np.mean([pi[c] for pi in last4_away_pi]) if last4_away_pi else 0.0
-                
-                # Calculate season metrics (all games up to current week)
-                if historical_pi_values:
-                    for c in stat_cols:
-                        result_row[f"pi_season_{c}"] = np.mean([pi[c] for pi in historical_pi_values])
-                    
-                    # Season home/away
-                    season_home_pi = [pi for pi in historical_pi_values if pi['isHome'] == True]
-                    season_away_pi = [pi for pi in historical_pi_values if pi['isHome'] == False]
-                    
-                    for c in stat_cols:
-                        result_row[f"pi_season_home_{c}"] = np.mean([pi[c] for pi in season_home_pi]) if season_home_pi else 0.0
-                        result_row[f"pi_season_away_{c}"] = np.mean([pi[c] for pi in season_away_pi]) if season_away_pi else 0.0
+                        result_row[f"pi_last4_home_{c}"] = 0.0
+                        result_row[f"pi_last4_away_{c}"] = 0.0
+                        result_row[f"pi_season_home_{c}"] = 0.0
+                        result_row[f"pi_season_away_{c}"] = 0.0
         
         weekly_results.append(result_row)
     

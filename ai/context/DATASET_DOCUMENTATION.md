@@ -126,15 +126,22 @@ The table contains Performance Index values for different time windows and game 
 - `pi_last4_home_passingYardsQB` - Last 4 games PI for QB passing yards (home games only)
 - `pi_last4_away_passingYardsQB` - Last 4 games PI for QB passing yards (away games only)
 
+**PI Calculation**: 
+- Formula: `(Expected - Actual) / Expected`
+- Expected = What the offense was expected to do based on their season performance up to that point
+- Actual = What the offense actually did against this specific defense
+
 **PI Interpretation**: 
 - Positive PI = Defense allowed fewer points than expected (good defense)
 - Negative PI = Defense allowed more points than expected (bad defense)
+- PI values are averages of per-game PI calculations for the specified time window
 
 **Data Availability**:
-- Week 1: No historical data available (NaN values for all PI columns)
-- Week 2+: Historical data becomes available for last1, last4, and season calculations
-- Early weeks may have limited data for last4 calculations
-- Cross-season data is used when available (e.g., last1 in week 1 may reference previous season)
+- **2019 Week 1**: No prior data available (all PI values set to 0.0)
+- **2020+ Week 1**: Uses previous season's data to calculate PI values (last1, last4, season all based on previous season performance)
+- **Week 2+**: Uses current season leave-one-out baseline for PI calculations
+- **Cross-season data**: Previous season games are used to fill out last1, last4, and season metrics when current season data is insufficient
+- **No NaN values**: All missing data is handled by setting PI values to 0.0
 
 **Total Columns**: ~615 columns covering all positions, stats, time windows, and home/away contexts
 
@@ -208,6 +215,26 @@ The project uses standard ESPN fantasy scoring:
 - **Baseline**: `projected_points` provides ESPN's baseline predictions for comparison
 - **Home/Away Context**: Defense PI table provides extensive home/away performance breakdowns for matchup analysis
 
+## Python Module: `analysis/compute_defense_adjusted_metrics_weekly_final.py`
+
+**Purpose**: Generates the weekly defense PI table with comprehensive time-series analysis
+
+**Key Functions**:
+- `calculate_weekly_defense_metrics()`: Main function that processes each defense team-week combination
+- Handles special cases for 2019 Week 1 (no prior data) vs 2020+ Week 1 (uses previous season)
+- Calculates PI values for each historical game, then averages them for last1, last4, season metrics
+- Provides extensive home/away breakdowns with 0.0 fallbacks for missing data
+
+**Input**: `data/defense_weekly_stats.parquet` (43,325 records)
+**Output**: `data/defense_adjusted_pi.parquet` (3,178 records)
+
+**Processing Logic**:
+1. **2019 Week 1**: Set all PI values to 0.0 (no prior data exists)
+2. **2020+ Week 1**: Calculate PI using previous season's data for expected values
+3. **Week 2+**: Use leave-one-out baseline within current season for expected values
+4. **Home/Away Splits**: Calculate separate metrics for home and away games with 0.0 fallbacks
+5. **Time Windows**: Aggregate PI values into last1, last4, and season averages
+
 ## Usage Recommendations
 
 1. **Start with position-specific datasets** for focused model training
@@ -219,3 +246,4 @@ The project uses standard ESPN fantasy scoring:
 7. **Combine multiple time windows** (last1, last4, season) for comprehensive defense evaluation
 8. **Leverage weekly PI data** for time-series analysis and trend identification
 9. **Filter by specific weeks** to analyze defense performance at different points in the season
+10. **Use the weekly PI table** for defense performance analysis at any point in the season
