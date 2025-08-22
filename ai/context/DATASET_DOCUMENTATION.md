@@ -12,7 +12,7 @@ fantasy-football/
 │   ├── fantasy_weekly_stats_complete.parquet    # Complete player dataset (74,991 records)
 │   ├── fantasy_weekly_stats_complete.csv        # CSV version of complete dataset
 │   ├── defense_weekly_stats.parquet             # Defense vs offense weekly stats (43,325 records)
-│   ├── defense_adjusted_pi.parquet              # Defense Performance Index calculations (193 records)
+│   ├── defense_adjusted_pi.parquet              # Defense Performance Index calculations (3,178 records)
 │   ├── defense_adjusted_pi.csv                  # CSV version of defense PI
 │   ├── defense_fantasy_rankings_2024.parquet    # 2024 defense fantasy rankings
 │   ├── defense_fantasy_rankings_2024.csv        # CSV version of 2024 rankings
@@ -94,23 +94,24 @@ fantasy-football/
 
 ### 3. Defense Adjusted PI (`defense_adjusted_pi.parquet`)
 
-**Purpose**: Performance Index calculations showing how defenses perform vs expected
-**Records**: 193 defense team-year combinations
-**Method**: Leave-one-out baseline calculation with extensive home/away breakdowns
+**Purpose**: Weekly Performance Index calculations showing how defenses perform vs expected at each point in the season
+**Records**: 3,178 defense team-week combinations (2019-2024)
+**Method**: Leave-one-out baseline calculation with extensive home/away breakdowns, calculated for each week of the season
 
 **Key Columns**:
 | Column | Data Type | Description |
 |--------|-----------|-------------|
 | `year` | int64 | NFL season year |
 | `defense_team` | string | Defensive team abbreviation |
+| `week` | int64 | NFL week (1-18) |
 
 **PI Column Structure** (all float64):
-The table contains Performance Index values for different time windows and game contexts:
+The table contains Performance Index values for different time windows and game contexts, calculated as of each week:
 
 **Time Windows**:
-- `pi_last1_*` - Last game performance
-- `pi_last4_*` - Last 4 games performance  
-- `pi_season_*` - Full season performance
+- `pi_last1_*` - Performance in the most recent game (week N-1)
+- `pi_last4_*` - Performance over the last 4 games (weeks N-4 to N-1)
+- `pi_season_*` - Performance over the entire season so far (weeks 1 to N-1)
 
 **Game Contexts**:
 - `pi_[timewindow]_[stat][position]` - Overall performance
@@ -118,9 +119,9 @@ The table contains Performance Index values for different time windows and game 
 - `pi_[timewindow]_away_[stat][position]` - Away game performance only
 
 **Example Columns**:
-- `pi_season_receivingYardsWR` - Season PI for WR receiving yards (all games)
-- `pi_season_home_receivingYardsWR` - Season PI for WR receiving yards (home games only)
-- `pi_season_away_receivingYardsWR` - Season PI for WR receiving yards (away games only)
+- `pi_season_receivingYardsWR` - Season-to-date PI for WR receiving yards (all games)
+- `pi_season_home_receivingYardsWR` - Season-to-date PI for WR receiving yards (home games only)
+- `pi_season_away_receivingYardsWR` - Season-to-date PI for WR receiving yards (away games only)
 - `pi_last4_passingYardsQB` - Last 4 games PI for QB passing yards
 - `pi_last4_home_passingYardsQB` - Last 4 games PI for QB passing yards (home games only)
 - `pi_last4_away_passingYardsQB` - Last 4 games PI for QB passing yards (away games only)
@@ -129,7 +130,13 @@ The table contains Performance Index values for different time windows and game 
 - Positive PI = Defense allowed fewer points than expected (good defense)
 - Negative PI = Defense allowed more points than expected (bad defense)
 
-**Total Columns**: ~600+ columns covering all positions, stats, time windows, and home/away contexts
+**Data Availability**:
+- Week 1: No historical data available (NaN values for all PI columns)
+- Week 2+: Historical data becomes available for last1, last4, and season calculations
+- Early weeks may have limited data for last4 calculations
+- Cross-season data is used when available (e.g., last1 in week 1 may reference previous season)
+
+**Total Columns**: ~615 columns covering all positions, stats, time windows, and home/away contexts
 
 ### 4. Defense Fantasy Rankings 2024 (`defense_fantasy_rankings_2024.parquet`)
 
@@ -210,3 +217,5 @@ The project uses standard ESPN fantasy scoring:
 5. **Handle missing data** appropriately (most stats default to 0)
 6. **Use home/away PI columns** for more nuanced defense performance analysis
 7. **Combine multiple time windows** (last1, last4, season) for comprehensive defense evaluation
+8. **Leverage weekly PI data** for time-series analysis and trend identification
+9. **Filter by specific weeks** to analyze defense performance at different points in the season

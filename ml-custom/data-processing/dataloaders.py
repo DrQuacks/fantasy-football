@@ -3,7 +3,12 @@ from .load_data import load_base_tables, load_defense_table
 from .fantasy_dataset import FantasyDataset
 from .collate import collate_fn
 
-def build_dataloaders(feature_cols, target_cols, batch_size=32):
+def build_dataloaders(feature_cols, target_cols, defense_cols=None, batch_size=32):
+    """
+    feature_cols: columns from player/teammate tables
+    target_cols:  training targets (e.g., ["points"])
+    defense_cols: columns from defense_df (e.g., ["pi_last4_passingYardsQB", ...])
+    """
     base_tables = load_base_tables()
     defense_df = load_defense_table()
     loaders = {}
@@ -22,6 +27,7 @@ def build_dataloaders(feature_cols, target_cols, batch_size=32):
             defense_df=defense_df,
             feature_cols=feature_cols,
             target_cols=target_cols,
+            defense_cols=defense_cols,   # <<— NEW
         )
 
         loaders[pos] = DataLoader(
