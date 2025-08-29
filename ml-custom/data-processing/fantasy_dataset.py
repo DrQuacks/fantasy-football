@@ -8,8 +8,8 @@ class FantasyDataset(Dataset):
     Returns:
       features_dict:
         - player_features:   (F_player,)
-        - teammate_features: (N_teammates, F_player)  # strict per-position blocks with slot padding
-        - defense_features:  (F_defense,)
+        - teammate_features: (N_teammates, F_player)  # per-bucket slots with zero padding
+        - defense_features:  (F_defense,)            # weekly PI features (team, year, week)
       targets: (num_targets,)
     """
 
@@ -19,19 +19,19 @@ class FantasyDataset(Dataset):
         base_df,
         context_dfs,
         defense_df,
-        feature_cols,          # player/teammate feature columns
-        target_cols,
-        defense_cols=None      # defense PI feature columns (separate space)
+        feature_cols,          # player/teammate feature columns (from position tables)
+        target_cols,           # training targets
+        defense_cols=None      # defense PI columns (from defense_adjusted_pi.parquet)
     ):
         """
         position: {"QB","RB","WR","TE","K"}
         base_df: focal position DataFrame (row = player-week)
         context_dfs: {"QB": qb_df, "RB": rb_df, "WR": wr_df, "TE": te_df, "K": k_df}
-                     (K ignored for non-K models)
-        defense_df: defense PI DataFrame (join via defense_team + year)
-        feature_cols: columns taken from player rows and teammate rows
-        target_cols: columns for the training targets
-        defense_cols: columns taken from defense_df (e.g., ["pi_last4_passingYardsQB", ...])
+                     (K is ignored for non-K models)
+        defense_df: defense weekly PI DataFrame (must contain 'defense_team','year','week')
+        feature_cols: columns used from player/teammate rows
+        target_cols:  columns used for the target tensor
+        defense_cols: columns used from defense_df (weekly PI), e.g. ["pi_last4_passingYardsQB", ...]
         """
         self.position     = position
         self.base_df      = base_df.reset_index(drop=True)
@@ -39,7 +39,7 @@ class FantasyDataset(Dataset):
         self.defense_df   = defense_df
         self.feature_cols = feature_cols
         self.target_cols  = target_cols
-        self.defense_cols = defense_cols or []  # separate feature space for defenses
+        self.defense_cols = defense_cols or []
 
         # Fixed per-position slot limits
         self.slots = {
@@ -50,7 +50,7 @@ class FantasyDataset(Dataset):
             "K" : {"QB": 1, "RB": 1},
         }
 
-        # Strict bucket order for teammates
+        # Strict teammate bucket order
         self.bucket_order = ["QB", "RB", "WR", "TE"] if position != "K" else ["QB", "RB"]
 
         # Sorting keys per bucket (descending)
@@ -72,7 +72,10 @@ class FantasyDataset(Dataset):
     # ---------- helpers ----------
 
     def _build_bucket_block(self, df_bucket: pd.DataFrame, pos: str, max_count: int) -> np.ndarray:
-        """(max_count, F_player) block sorted by the bucket’s yardage key; zero-pads remaining slots."""
+        """
+        Produce a (max_count, F_player) block for a given position bucket.
+        Sort by the position's yardage key (if present), fill top slots, zero-pad the rest.
+        """
         key = self.order_keys.get(pos)
         if key and key in df_bucket.columns:
             df_bucket = df_bucket.sort_values(key, ascending=False)
@@ -85,7 +88,10 @@ class FantasyDataset(Dataset):
         return block
 
     def _get_teammates(self, team: str, year: int, week: int, exclude_player_id: int) -> np.ndarray:
-        """(N_teammates, F_player) in strict bucket order with per-bucket padding."""
+        """
+        Build the (N_teammates, F_player) matrix in strict bucket order with per-bucket padding.
+        Match on team + year + week; exclude focal player.
+        """
         blocks = []
         for pos in self.bucket_order:
             max_count = self.slots[self.position].get(pos, 0)
@@ -106,24 +112,35 @@ class FantasyDataset(Dataset):
             return np.vstack(blocks)
         return np.zeros((self.total_teammate_rows, self.F_player), dtype="float32")
 
-    def _get_defense_stats(self, opponent: str, year: int) -> np.ndarray | None:
-        """Returns a (F_defense,) vector from defense_df using `defense_cols` (if provided)."""
+    def _get_defense_stats(self, opponent: str, year: int, week: int) -> np.ndarray:
+        """
+        Select (F_defense,) weekly PI vector from defense_df at (defense_team, year, week).
+        If no columns found or row missing, returns zeros of length F_defense.
+        """
         if self.F_defense == 0:
-            return None
+            return np.zeros((0,), dtype="float32")
 
-        rows = self.defense_df[
+        # Filter by team + year + week (weekly PI table)
+        rows = self.defense_df.loc[
             (self.defense_df["defense_team"] == opponent) &
-            (self.defense_df["year"] == year)
+            (self.defense_df["year"] == int(year)) &
+            (self.defense_df["week"] == int(week)),
+            [c for c in self.defense_cols if c in self.defense_df.columns]
         ]
         if rows.empty:
-            return None
+            return np.zeros((self.F_defense,), dtype="float32")
 
-        # Select only the requested defense columns that actually exist
-        cols = [c for c in self.defense_cols if c in rows.columns]
-        if not cols:
-            return None
+        # Ensure fixed ordering based on requested defense_cols
+        # (only keep those that actually existed in df)
+        existing = [c for c in self.defense_cols if c in rows.columns]
+        vec = rows.iloc[0][existing].to_numpy(dtype="float32")
 
-        return rows.iloc[0][cols].to_numpy(dtype="float32")
+        # If some requested cols were missing, right-pad zeros to expected length
+        if len(existing) < self.F_defense:
+            pad = np.zeros((self.F_defense - len(existing),), dtype="float32")
+            vec = np.concatenate([vec, pad], axis=0)
+
+        return vec
 
     # ---------- main ----------
 
@@ -143,10 +160,8 @@ class FantasyDataset(Dataset):
         teammate_features_np = self._get_teammates(team, year, week, player_id)
         teammate_features = torch.tensor(teammate_features_np, dtype=torch.float32)
 
-        # Defense (separate feature space)
-        def_feats = self._get_defense_stats(opponent, year)
-        if def_feats is None:
-            def_feats = np.zeros((self.F_defense,), dtype="float32") if self.F_defense > 0 else np.zeros((0,), dtype="float32")
+        # Defense (weekly PI features)
+        def_feats = self._get_defense_stats(opponent, year, week)
         defense_features = torch.tensor(def_feats, dtype=torch.float32)
 
         # Targets

@@ -68,7 +68,7 @@ fantasy-football/
 - **Rushing**: `rushingYards`, `rushingTouchdowns`, `rushing40PlusYardTD`, `rushing50PlusYardTD`, `rushing100To199YardGame`, `rushing200PlusYardGame`, `rushingYardsPerAttempt`
 - **Receiving**: `receivingYards`, `receivingReceptions`, `receivingTouchdowns`, `receivingTargets`, `receivingYardsAfterCatch`, `receivingYardsPerReception`, `receiving100To199YardGame`, `receiving200PlusYardGame`
 - **Kicking**: `madeExtraPoints`, `attemptedFieldGoals`, `madeFieldGoalsFromUnder40`, `madeFieldGoalsFrom50Plus`
-- **Other**: `fumbles`, `lostFumbles`, `turnovers`, `pointsScored`
+- **Other**: `fumbles`, `lostFumbles`, `turnovers`, `points`
 
 ### 2. Defense Weekly Stats (`defense_weekly_stats.parquet`)
 

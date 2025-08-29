@@ -1,13 +1,38 @@
+# ml-custom/data-processing/dataloaders.py
+
 from torch.utils.data import DataLoader
 from .load_data import load_base_tables, load_defense_table
 from .fantasy_dataset import FantasyDataset
 from .collate import collate_fn
 
-def build_dataloaders(feature_cols, target_cols, defense_cols=None, batch_size=32):
+# NEW: import the canonical position->targets mapping
+from models.targets import POSITION_TARGETS  # assumes ml-custom is on PYTHONPATH
+
+def build_dataloaders(
+    feature_cols,
+    defense_cols=None,
+    batch_size=32,
+    override_target_cols_per_pos: dict | None = None,
+):
     """
-    feature_cols: columns from player/teammate tables
-    target_cols:  training targets (e.g., ["points"])
-    defense_cols: columns from defense_df (e.g., ["pi_last4_passingYardsQB", ...])
+    Build one DataLoader per position with *automatic* target column selection.
+
+    Args
+    ----
+    feature_cols : list[str]
+        Columns from the player/teammate tables used as features.
+    defense_cols : list[str] | None
+        Columns from defense_adjusted_pi.parquet (weekly PI) to use as defense features.
+    batch_size : int
+        Batch size for all loaders.
+    override_target_cols_per_pos : dict[str, list[str]] | None
+        Optional per-position override; e.g. {"WR": ["points","receivingYards", ...]}.
+        If provided for a position, it replaces POSITION_TARGETS[pos].
+
+    Returns
+    -------
+    dict[str, DataLoader]
+        A dict mapping position name -> DataLoader.
     """
     base_tables = load_base_tables()
     defense_df = load_defense_table()
@@ -20,14 +45,21 @@ def build_dataloaders(feature_cols, target_cols, defense_cols=None, batch_size=3
             if (name != pos and (pos == "K" or name != "K"))
         }
 
+        # Auto-pick target_cols for this position, with optional override
+        target_cols = (
+            override_target_cols_per_pos[pos]
+            if (override_target_cols_per_pos and pos in override_target_cols_per_pos)
+            else POSITION_TARGETS[pos]
+        )
+
         dataset = FantasyDataset(
             position=pos,
             base_df=base_df,
             context_dfs=context_dfs,
             defense_df=defense_df,
             feature_cols=feature_cols,
-            target_cols=target_cols,
-            defense_cols=defense_cols,   # <<— NEW
+            target_cols=target_cols,     # <— auto-aligned with model heads
+            defense_cols=defense_cols,
         )
 
         loaders[pos] = DataLoader(
