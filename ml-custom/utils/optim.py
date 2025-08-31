@@ -1,8 +1,8 @@
-# ml-custom/utils/optim.py
 from __future__ import annotations
-from typing import Iterable, List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 import torch
 import torch.nn as nn
+from config import TrainConfig
 
 NO_DECAY_KEYWORDS_DEFAULT = ("bias", "norm", "ln", "layernorm", "bn", "embedding")
 
@@ -10,14 +10,6 @@ def split_params_for_weight_decay(
     model: nn.Module,
     no_decay_keywords: Tuple[str, ...] = NO_DECAY_KEYWORDS_DEFAULT,
 ) -> Dict[str, List[torch.nn.Parameter]]:
-    """
-    Returns two param lists: {"decay": [...], "no_decay": [...]}
-
-    Rules:
-      • no_decay: params with name containing any keyword in no_decay_keywords, OR tensors with ndim <= 1
-                  (bias vectors, norm scalars, embeddings, etc.)
-      • decay:    everything else (typical weight matrices)
-    """
     decay, no_decay = [], []
     for name, p in model.named_parameters():
         if not p.requires_grad:
@@ -31,16 +23,27 @@ def split_params_for_weight_decay(
 
 def build_adamw_with_groups(
     model: nn.Module,
-    lr: float = 3e-4,
-    weight_decay: float = 1e-4,
+    config: Optional[TrainConfig] = None,
+    *,
+    lr: Optional[float] = None,
+    weight_decay: Optional[float] = None,
     no_decay_keywords: Tuple[str, ...] = NO_DECAY_KEYWORDS_DEFAULT,
     **adamw_kwargs,
 ) -> torch.optim.Optimizer:
     """
-    Creates AdamW with two param groups:
-      - decay: applies weight_decay
-      - no_decay: weight_decay = 0.0
+    Build AdamW with param groups.
+
+    Priority for hyperparams:
+      1. Explicit args (lr, weight_decay) if provided
+      2. Values from TrainConfig if provided
+      3. Fall back to TrainConfig() defaults if nothing passed
     """
+    # Source of truth is TrainConfig
+    cfg = config or TrainConfig()
+
+    lr = lr if lr is not None else cfg.lr
+    weight_decay = weight_decay if weight_decay is not None else cfg.weight_decay
+
     groups = split_params_for_weight_decay(model, no_decay_keywords=no_decay_keywords)
     return torch.optim.AdamW(
         [
